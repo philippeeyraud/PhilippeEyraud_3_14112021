@@ -1,7 +1,162 @@
+*{margin: 0px;
+padding: 0px;}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: centerrm;
+        font-family:'Roboto', sans-serif;
+        
    
 }
-img.logo{width: 200px;}
+img.logo{
+        width: 200px;
+        font-family: 'Shrikhand', cursive;
+        margin:10px 0px 10px 0px;
+}
+header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+}
+form button.map{       
+        width: 25px;
+        height: 25px;
+        background-color:#99E2D0;
+        border: none;
+}
+input.index{
+        border: none;
+        background-color: #99e2d0;}
+
+form{  
+        display: flex;
+        background-color: #99E2D0;
+        width:375px;
+        justify-content: center;
+        box-shadow: 3px 1px 1px 1px lightgrey;
+        border:1px solid #99E2D0;
+}
+section.discovery div h1{   
+    
+        margin: 30px 60px 10px 60px;
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+}
+section.discovery{
+        background-color:#caf5ea;
+        padding-bottom: 40px;
+}
+
+section div.discover{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        line-height: 20px;
+}   
+
+
+section.discovery div p{
+        padding: 0px 25px 15px 25px;
+        font-weight: bold;
+        text-align: center;      
+}
+section div.discover button.search{
+        border-radius: 25px;
+        height: 30px;
+        font-size: 10px;
+        width:40%;
+        background-color: #FF79DA;
+        border-color:#FF79DA;
+        background-color: #FF79DA ;
+}
+section div.discover button.search i{
+        color: white;
+}
+/*--------------------------fonctionement-----------*/
+section div.operation{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 50px;
+        align-content: center;
+}
+section div h1.operation__title{
+        font-family: 'Shrikhand';
+        padding-left: 80px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        position:relative;
+          right:80px;
+}
+div.operation button.operation__stage{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#99E2D0;
+        border-color:transparent;
+        background-color: #99E2D0;
+        margin-bottom: 20px;
+        box-shadow: 2 2 2 2#99E2D0;
+}
+
+
+button.operation__stage a{
+        text-decoration: none;
+
+        }
+div.operation .operation__number--1{ 
+       position: absolute;
+       top:400px;
+       left: 5px;
+        border-radius: 50%;
+        background-color: #9356DC;
+        border: px solid #9356DC;
+        color: white;
+        width:20px;
+        text-align: center;
+}
+div.operation .operation__number--2{
+                position: absolute;
+                top:480px;
+                left: 5px;
+                background-color: #9356DC;
+                border: px solid #9356DC;
+                color: white;
+                width:20px;
+                text-align: center;
+                border-radius: 50%;
+        }
+                div.operation .operation__number--3{ 
+                        position: absolute;
+                        top:560px;
+                        left: 5px;
+                        border-radius: 50%;
+                        background-color: #9356DC;
+                        border: px solid #9356DC;
+                        color: white;
+                        width:20px;
+                        text-align: center;
+                }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
