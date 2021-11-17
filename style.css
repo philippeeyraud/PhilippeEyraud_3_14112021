@@ -3,6 +3,7 @@ padding: 0px;}
 
 body {
         font-family:'Roboto', sans-serif;
+        font-size: 16px;
         
    
 }
@@ -72,7 +73,7 @@ section div.discover button.search{
 section div.discover button.search i{
         color: white;
 }
-/*--------------------------fonctionement-----------*/
+/*--------------------------fonctionement---------*/
 section div.operation{
         display: flex;
         flex-direction: column;
@@ -89,7 +90,7 @@ section div h1.operation__title{
         position:relative;
           right:80px;
 }
-div.operation button.operation__stage{
+div.operation button.operation__stage--vert{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -100,16 +101,32 @@ div.operation button.operation__stage{
         height:60px;
         background-color:#99E2D0;
         border-color:transparent;
-        background-color: #99E2D0;
+        
         margin-bottom: 20px;
         box-shadow: 2 2 2 2#99E2D0;
 }
-
-
+.fa-list{
+        position: absolute;
+        left: 70px;
+}
+.fa-store{color:#9356DC;}
+div.operation button.operation__stage--violet{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#c8b2e4;        ;
+        border-color:transparent;
+        margin-bottom: 20px;
+        box-shadow: 2 2 2 2#c8b2e4;
+}
 button.operation__stage a{
         text-decoration: none;
-
-        }
+}
 div.operation .operation__number--1{ 
        position: absolute;
        top:400px;
@@ -143,8 +160,15 @@ div.operation .operation__number--2{
                         width:20px;
                         text-align: center;
                 }
-
-        
+section.dining__contain{
+        background-color:#99E2D0;
+       
+}
+ div.dining__pictureone img{
+         width:375px;
+         height:170px;
+         object-fit: cover;
+}       
 
 
 
