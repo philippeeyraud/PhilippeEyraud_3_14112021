@@ -8,7 +8,7 @@ body {
    
 }
 img.logo{
-        width: 200px;
+        width:200px;
         font-family: 'Shrikhand', cursive;
         margin:10px 0px 10px 0px;
 }
@@ -63,7 +63,6 @@ section div.discover button.search{
         height: 30px;
         font-size: 10px;
         width:40%;
-        background-color: #FF79DA;
         border-color:#FF79DA;
         background-color: #FF79DA ;
 }
@@ -87,7 +86,7 @@ section div h1.operation__title{
         position:relative;
         right:80px;
 }
-div.operation button.operation__stage--vert{
+div.operation button.operation__stage--green{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -101,14 +100,21 @@ div.operation button.operation__stage--vert{
         margin-bottom: 20px;
         box-shadow: 2 2 2 2#99E2D0;
 }
-.fa-list{
-        position: absolute;
-        left: 70px;
+div.operation button.operation__stage--lightgreen{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#99E2D0;
+        border-color:transparent;
+        margin-bottom: 20px;
+        box-shadow: 2 2 2 2#99E2D0;
 }
-.fa-store{
-        color:#9356DC;
-}
-div.operation button.operation__stage--violet{
+div.operation button.operation__stage--purple{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -122,8 +128,24 @@ div.operation button.operation__stage--violet{
         margin-bottom: 20px;
         box-shadow: 2 2 2 2#c8b2e4;
 }
-button.operation__stage a{
+div.operation a{
+        color: black;
+        font-weight: bold;
         text-decoration: none;
+}
+div.operation a.lightgreen{
+        padding-left: 40px;
+}
+div.operation a.purple{
+        margin-right: 20px;
+}
+.fa-list{
+        position: absolute;
+        left: 70px;
+}
+.fa-store{
+        color:#9356DC;
+        padding-left: px;
 }
 div.operation .operation__number--1{ 
         position: absolute;
@@ -136,7 +158,7 @@ div.operation .operation__number--1{
         width:20px;
         text-align: center;
 }
-div.operation .operation__number--2{
+        div.operation .operation__number--2{
                 position: absolute;
                 top:480px;
                 left: 5px;
@@ -160,19 +182,18 @@ div.operation .operation__number--2{
                 }
 section.dining__contain{
         background-color:#99E2D0;
-       padding-bottom: 20px;
+        padding-bottom: 50px;
         padding-right: 5px;
         padding-left: 5PX;
         box-sizing: border-box;
        
 }
  div.dining__picture img{
-    
-         width:100%;
-         height:170px;
-         object-fit: cover;
-       
-       
+        width:100%;
+        height:170px;
+        object-fit: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
 }       
 img.pictureone{
         display: flex;
@@ -187,6 +208,11 @@ img.picturefour{
         display: flex;
 }
 div.dining__content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
         height: 60px;
         margin-bottom: 0px;
         background-color: white;
@@ -196,19 +222,68 @@ div.dining__content{
 section.dining__contain div.dining__first{
 padding-top: 60px;
 }
-div.dining__first.dining__title{ 
+div.dining__first h1.dining__title{ 
         font-family: 'Shrikhand', cursive;
+        position: absolute;
+        top: 685px;
+}
+div.dining__title h3{  
+        margin: 5px 0px 0px 0px;
+        font-size: 16px;
 
 }
+a.dining{
+        text-decoration: none;
+        color: black;
+}
+div.dining__content{
+        padding-left: 10px;
+}
 
+.fa-heart{position: relative;
+        left: 320px;
+        bottom: 35px;
+}
+/*----footer-----*/
+img.footerlogo{
+        width:80px;
+        font-family: 'Shrikhand', cursive;
+        margin:20px 0px 0px 10px;
 
+}
+div.footpage{display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        background: grey;
+        padding-bottom: 30px;
+}
+a.footup{
+        margin-left: 30px;
+        text-decoration: none;
+        color: black;
+}
+a.foot{
+        text-decoration: none;
+        
+}
+h3{
+        margin-left:10px;
+        font-size:16px;
+        font-weight: 200; 
+        color: black;   
+}
+.fa-staylinked{
+        position: relative;
+        right:175px;
+        top: 20px;
+        color: white;
+}
+.fa-utensils{
+        position: relative;
+        left: 10px;
+        top: 15px;
+        color: white;
+      
+    
 
-
-
-
-
-
-
-
-
-
+}
