@@ -59,22 +59,19 @@ section.discovery div p{
         padding: 15px 23px 15px 22px;
         text-align: center;      
 }
-section div.discover button.btn {
+button.btn {
         border-radius: 25px;
         height: 30px;
         font-size: 10px;
         width:200px;
         border-color:#FF79DA;
-        background-color: #FF79DA ;
-        background-image: linear-gradient( 0deg,#FF79DA,#f0ddea);
+        background-color: #9356dc;
         cursor: pointer;
-        transition-duration: .25s;
-        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
 }
-@media (hover:hover){btn:hover{ background:pink;}}
-div.discover button.btn i{color: white;
-       
-       
+button.btn:hover{background-color: #b79adb;
+color: white;
+}
+div.discover button.btn {color: white;
 }
 /*--------------------------fonctionement---------*/
 section.operation__contain div.operation{
@@ -93,7 +90,7 @@ section div h1.operation__title{
         position:relative;
         right:80px;
 }
-div.operation button.operation__stage--green{
+div.operation button.btn1{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -105,58 +102,67 @@ div.operation button.operation__stage--green{
         background-color:#99E2D0;
         border-color:transparent;
         margin-bottom: 20px;
-        box-shadow: 2 2 2 2#99E2D0;
+      
 }
-div.operation button.operation__stage--lightgreen{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 25px;
-        height: 30px;
-        font-size: 15px;
-        width:90%;
-        height:60px;
-        background-color:#99E2D0;
-        border-color:transparent;
-        margin-bottom: 20px;
-        box-shadow: 2 2 2 2#99E2D0;
-}
-div.operation button.operation__stage--purple{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 25px;
-        height: 30px;
-        font-size: 15px;
-        width:90%;
-        height:60px;
-        background-color:#c8b2e4;        ;
-        border-color:transparent;
-        margin-bottom: 20px;
-        box-shadow: 2 2 2 2#c8b2e4;
-}
-div.operation a{
+div.operation button.btn1:hover{
+        background-color:#d2d8d7;
         color: black;
-        font-weight: bold;
-        text-decoration: none;
 }
-div.operation a.lightgreen{
-        padding-left: 40px;
+div.operation button.btn2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#99E2D0;
+        border-color:transparent;
+        margin-bottom: 20px;
+       
 }
-div.operation a.purple{
-        margin-right: 20px;
+div.operation button.btn2:hover{
+        background-color:#d2d8d7;
+        color: black;
 }
+div.operation button.btn3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#FF79DA;        
+        border-color:transparent;
+        margin-bottom: 20px;
+}
+div.operation button.btn3:hover{
+        background-color:#fcb4e7;
+        color: black;
+}
+.fa-mobile-alt{
+        position: absolute;
+        left: 50px;
+        top: 415px;
+}
+
 .fa-list{
         position: absolute;
-        left: 70px;
+        left: 50px;
+        top: 490px;
 }
 .fa-store{
+        position:absolute;
         color:#9356DC;
-        padding-left: px;
+        left:50px;
+        top: 570px;
 }
 div.operation .operation__number--1{ 
         position: absolute;
-        top:400px;
+        top:410px;
         left: 5px;
         border-radius: 50%;
         background-color: #9356DC;
@@ -167,7 +173,7 @@ div.operation .operation__number--1{
 }
         div.operation .operation__number--2{
                 position: absolute;
-                top:480px;
+                top:490px;
                 left: 5px;
                 background-color: #9356DC;
                 border: px solid #9356DC;
@@ -178,7 +184,7 @@ div.operation .operation__number--1{
         }
                 div.operation .operation__number--3{ 
                         position: absolute;
-                        top:560px;
+                        top:570px;
                         left: 5px;
                         border-radius: 50%;
                         background-color: #9356DC;
