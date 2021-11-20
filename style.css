@@ -1,5 +1,7 @@
-*{margin: 0px;
-padding: 0px;}
+*{      
+        margin: 0px;
+        padding: 0px;
+}
 
 body {
         font-family:'Roboto',Shrikhand, cursive sans-serif;
@@ -37,7 +39,7 @@ form{
         border:1px solid #99E2D0;
 }
 section.discovery div h1{   
-        margin: 30px 60px 10px 60px;
+        margin: 30px 50px 10px 40px;
         text-align: center;
         font-family: 'Shrikhand', cursive;
 }
@@ -54,23 +56,28 @@ section div.discover{
         line-height: 20px;
 }   
 section.discovery div p{
-        padding: 0px 25px 15px 25px;
-        font-weight: bold;
+        padding: 15px 23px 15px 22px;
         text-align: center;      
 }
-section div.discover button.search{
+section div.discover button.btn {
         border-radius: 25px;
         height: 30px;
         font-size: 10px;
-        width:40%;
+        width:200px;
         border-color:#FF79DA;
         background-color: #FF79DA ;
+        background-image: linear-gradient( 0deg,#FF79DA,#f0ddea);
+        cursor: pointer;
+        transition-duration: .25s;
+        box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
 }
-section div.discover button.search i{
-        color: white;
+@media (hover:hover){btn:hover{ background:pink;}}
+div.discover button.btn i{color: white;
+       
+       
 }
 /*--------------------------fonctionement---------*/
-section div.operation{
+section.operation__contain div.operation{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -180,20 +187,22 @@ div.operation .operation__number--1{
                         width:20px;
                         text-align: center;
                 }
+/************restaurants******/
 section.dining__contain{
         background-color:#99E2D0;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         padding-right: 5px;
         padding-left: 5PX;
         box-sizing: border-box;
        
 }
  div.dining__picture img{
-        width:100%;
+        width:92%;
         height:170px;
         object-fit: cover;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        margin-left: 10px;
 }       
 img.pictureone{
         display: flex;
@@ -210,14 +219,19 @@ img.picturefour{
 div.dining__content{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
+        flex-wrap: wrap;
+        justify-content:flex-end;
         align-items: flex-start;
         height: 60px;
         margin-bottom: 0px;
         background-color: white;
         border-radius: 0px 0px 10px 10px;
         height:70PX;
+        width:90%;
+        padding-left:0px;
+        margin-left: 10px;
+      
+  
 }
 section.dining__contain div.dining__first{
 padding-top: 60px;
@@ -230,6 +244,7 @@ div.dining__first h1.dining__title{
 div.dining__title h3{  
         margin: 5px 0px 0px 0px;
         font-size: 16px;
+        color: black;
 
 }
 a.dining{
@@ -241,7 +256,7 @@ div.dining__content{
 }
 
 .fa-heart{position: relative;
-        left: 320px;
+        left: 290px;
         bottom: 35px;
 }
 /*----footer-----*/
@@ -249,7 +264,9 @@ img.footerlogo{
         width:80px;
         font-family: 'Shrikhand', cursive;
         margin:20px 0px 0px 10px;
-
+        filter: invert(100%);
+        -webkit-filter: white(100%);
+        
 }
 div.footpage{display: flex;
         flex-direction: column;
@@ -257,6 +274,7 @@ div.footpage{display: flex;
         background: grey;
         padding-bottom: 30px;
 }
+div.footpage a i{color:white}
 a.footup{
         margin-left: 30px;
         text-decoration: none;
@@ -270,7 +288,7 @@ h3{
         margin-left:10px;
         font-size:16px;
         font-weight: 200; 
-        color: black;   
+        color:white;   
 }
 .fa-staylinked{
         position: relative;
@@ -283,7 +301,4 @@ h3{
         left: 10px;
         top: 15px;
         color: white;
-      
-    
-
 }
