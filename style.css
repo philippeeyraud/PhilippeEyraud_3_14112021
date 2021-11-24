@@ -203,7 +203,7 @@ section.dining__contain{
        
 }
  div.dining__picture img{
-        width:92%;
+        width:95%;
         height:170px;
         object-fit: cover;
         border-top-right-radius: 10px;
@@ -226,17 +226,18 @@ div.dining__content{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content:flex-end;
+        justify-content:center;
         align-items: flex-start;
         height: 60px;
         margin-bottom: 0px;
         background-color: white;
         border-radius: 0px 0px 10px 10px;
-        height:70PX;
-        width:90%;
+        height: 70px;
+        width:92%;
         padding-left:0px;
         margin-left: 10px;
-      
+        padding: 10px 0px 0px  10px;
+        font-size: 20px;
   
 }
 section.dining__contain div.dining__first{
@@ -255,16 +256,35 @@ div.dining__title h3{
 }
 a.dining{
         text-decoration: none;
-        color: black;
+        color: white;
 }
-div.dining__content{
-        padding-left: 10px;
+ div.dining__first div.heart{    
+        position: absolute;
+        right: 30px;
+        top: 935px;
+}
+div.dining__second div.heart{    
+        position: absolute;
+        right: 30px;
+        top:1200px;
+       
+}
+div.dining__third div.heart{    
+        position: absolute;
+        right: 30px;
+        top: 1470px;
+     
+}
+div.dining__fourth div.heart{    
+        position: absolute;
+        right: 30px;
+        top: 1740px;
+        
+}
+.svg-inline--fa{
+        font-size: 25px;
 }
 
-.fa-heart{position: relative;
-        left: 290px;
-        bottom: 35px;
-}
 /*----footer-----*/
 img.footerlogo{
         width:80px;
@@ -308,3 +328,43 @@ h3{
         top: 15px;
         color: white;
 }
+/*-----Menu 1-----*/
+*{      
+        margin: 0px;
+        padding: 0px;
+}
+
+.backarrow{
+        width: 30px;
+        position: relative;
+        right: 50px;
+        top: 15px;
+}
+img.logo {
+        width: 200PX;
+} 
+img.picture{
+        width: 100%;
+}
+div.card__first h1.card__title{ 
+        margin: 30px 50px 10px 40px;
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+}
+
+div.card__first div.cardfirstheart{
+        position: absolute;
+        right: 20px;
+        top: 380px;
+}
+.card-menu__title{margin:20px 0px 0px 10px ;
+
+border-inline-color: green;
+
+}
+
+ .card-menu__title::after{ border-inline: 10px;}    
+      
+    
+
+     
