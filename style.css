@@ -248,16 +248,18 @@ div.dining__first h1.dining__title{
         position: absolute;
         top: 685px;
 }
+
 div.dining__title h3{  
         margin: 5px 0px 0px 0px;
         font-size: 16px;
         color: black;
-
+      
 }
-a.dining{
+div.dining__first a.content{
         text-decoration: none;
-        color: white;
 }
+
+
  div.dining__first div.heart{    
         position: absolute;
         right: 30px;
@@ -269,17 +271,24 @@ div.dining__second div.heart{
         top:1200px;
        
 }
+div.dining__second a.content{
+        text-decoration: none;
+}
 div.dining__third div.heart{    
         position: absolute;
         right: 30px;
         top: 1470px;
-     
+}
+div.dining__third a.content{
+        text-decoration: none;
 }
 div.dining__fourth div.heart{    
         position: absolute;
         right: 30px;
         top: 1740px;
-        
+}
+div.dining__fourth a.content{
+        text-decoration: none;
 }
 .svg-inline--fa{
         font-size: 25px;
