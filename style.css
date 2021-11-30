@@ -54,25 +54,30 @@ section div.discover{
         flex-wrap: wrap;
         align-items: center;
         line-height: 20px;
+        align-items: flex-start;
 }   
 section.discovery div p{
         padding: 15px 23px 15px 22px;
         text-align: center;      
 }
-button.btn {
+
+section.discovery div.discover button.btn {
         border-radius: 25px;
         height: 30px;
         font-size: 10px;
         width:200px;
         border-color:#FF79DA;
         background-color: #9356dc;
-        cursor: pointer;
+        cursor: pointer;    
+        position: relative;
+        top: 0px;
+        color: white;
 }
-button.btn:hover{background-color: #b79adb;
-color: white;
+ button.btn:hover {
+        background-color: #b79adb;
+        color: white;
 }
-div.discover button.btn {color: white;
-}
+
 /*--------------------------fonctionement---------*/
 section.operation__contain div.operation{
         display: flex;
@@ -102,6 +107,7 @@ div.operation button.btn1{
         background-color:#99E2D0;
         border-color:transparent;
         margin-bottom: 20px;
+        
       
 }
 div.operation button.btn1:hover{
@@ -120,7 +126,7 @@ div.operation button.btn2{
         background-color:#99E2D0;
         border-color:transparent;
         margin-bottom: 20px;
-       
+        transition: transform;
 }
 div.operation button.btn2:hover{
         background-color:#d2d8d7;
@@ -138,6 +144,7 @@ div.operation button.btn3{
         background-color:#FF79DA;        
         border-color:transparent;
         margin-bottom: 20px;
+        transition: transform ;
 }
 div.operation button.btn3:hover{
         background-color:#fcb4e7;
@@ -171,28 +178,28 @@ div.operation .operation__number--1{
         width:20px;
         text-align: center;
 }
-        div.operation .operation__number--2{
-                position: absolute;
-                top:490px;
-                left: 5px;
-                background-color: #9356DC;
-                border: px solid #9356DC;
-                color: white;
-                width:20px;
-                text-align: center;
-                border-radius: 50%;
-        }
-                div.operation .operation__number--3{ 
-                        position: absolute;
-                        top:570px;
-                        left: 5px;
-                        border-radius: 50%;
-                        background-color: #9356DC;
-                        border: px solid #9356DC;
-                        color: white;
-                        width:20px;
-                        text-align: center;
-                }
+div.operation .operation__number--2{
+        position: absolute;
+        top:490px;
+        left: 5px;
+        background-color: #9356DC;
+        border: px solid #9356DC;
+        color: white;
+        width:20px;
+        text-align: center;
+        border-radius: 50%;
+}
+div.operation .operation__number--3{ 
+        position: absolute;
+        top:570px;
+        left: 5px;
+        border-radius: 50%;
+        background-color: #9356DC;
+        border: px solid #9356DC;
+        color: white;
+        width:20px;
+        text-align: center;
+ }
 /************restaurants******/
 section.dining__contain{
         background-color:#99E2D0;
@@ -248,6 +255,9 @@ div.dining__first h1.dining__title{
         position: absolute;
         top: 685px;
 }
+div.dining__title h4{
+        color: black;
+}
 
 div.dining__title h3{  
         margin: 5px 0px 0px 0px;
@@ -264,11 +274,13 @@ div.dining__first a.content{
         position: absolute;
         right: 30px;
         top: 935px;
+        color: black;
 }
 div.dining__second div.heart{    
         position: absolute;
         right: 30px;
         top:1200px;
+        color: black;
        
 }
 div.dining__second a.content{
@@ -278,6 +290,7 @@ div.dining__third div.heart{
         position: absolute;
         right: 30px;
         top: 1470px;
+        color: black;
 }
 div.dining__third a.content{
         text-decoration: none;
@@ -286,6 +299,7 @@ div.dining__fourth div.heart{
         position: absolute;
         right: 30px;
         top: 1740px;
+        color: black;
 }
 div.dining__fourth a.content{
         text-decoration: none;
@@ -309,7 +323,8 @@ div.footpage{display: flex;
         background: grey;
         padding-bottom: 30px;
 }
-div.footpage a i{color:white}
+div.footpage a i{ 
+        color:white}
 a.footup{
         margin-left: 30px;
         text-decoration: none;
@@ -366,14 +381,232 @@ div.card__first div.cardfirstheart{
         right: 20px;
         top: 380px;
 }
-.card-menu__title{margin:20px 0px 0px 10px ;
+div.card-menu .card-menu__title{margin:20px 0px 0px 10px ;
+        border-inline-color: green;
+}
+/*-----starter------*/
+body.lapalettedugout{
+     background-color:    rgb(238, 234, 234);
+     box-sizing: border-box;
+     font-family:'Roboto',Shrikhand, cursive sans-serif;
+     font-size: 16px;
+}
+section.card-menu{
+        padding: 0px 10px 0px 10px;
+}
+div.card-menu__starter h4.card-menu__title{
+        
+        padding-bottom:5px;
+        width: 10%;
+        color: black;
+        margin: 30px 0px 15px 0px;
+        border-bottom : 1px solid lightgrey;
+        border-width: 3px;
+        text-decoration: none;
+}
+a.card-menu__starter{
+        text-decoration: none;
+        color: black;
+}
+div.starter__content{
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+        margin:10px 0px 10px 0px;
+        padding-left:10px;
+        height: 69px;
+        } 
+        
+div.starter__title{
+        padding: 15px 0px 3px 0px;
+   }
+div.starter__price{ 
+        width: 20px;
+        position: relative;
+        left: 230px;
+        bottom: 18px;
+ }
+.fa-check-circle{
+        color:#99E2D0;
+        background-color: white;
+        border-radius: 50PX;
+        font-size: 35px; 
+}
+ div.check__icon--check{
+        display: flex;
+        direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 72px;
+        left: 290px;
+        width: 60px;
+        height: 70px;
+        overflow: hidden;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #99E2D0;}
 
-border-inline-color: green;
+/*---main---*/
 
+a.card-menu__main{
+        text-decoration: none;
+        color: black;
+}
+div.card-menu__main h4.card-menu__title{
+        
+        padding-bottom:5px;
+        width: 10%;
+        color: black;
+        margin: 30px 0px 15px 0px;
+        border-bottom : 1px solid lightgrey;
+        border-width: 3px;
+        text-decoration: none;
+}
+div.main__content{
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+        margin:10px 0px 10px 0px;
+        padding-left:10px;
+        height: 69px;
+   } 
+div.main__title{
+        padding: 15px 0px 3px 0px;
+        }
+div.main__price{ 
+        width: 20px;
+         position: relative;
+         left: 250px;
+         bottom: 20px;
+}
+a.card-menu__dessert{
+        text-decoration: none;
+        color: black;
+}    
+div.card-menu__dessert h4.card-menu__title{
+        padding-bottom:5px;
+        width: 10%;
+        color: black;
+        margin: 30px 0px 15px 0px;
+        border-bottom : 1px solid lightgrey;
+        border-width: 3px;
+        text-decoration: none;
+}
+div.dessert__content{
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 10px;
+        margin:10px 0px 10px 0px;
+        padding-left:10px;
+        height: 69px;
+}
+div.dessert__title{
+        padding: 15px 0px 3px 0px;
+}
+div.dessert__price{ 
+        width: 20px;
+         position: relative;
+         left: 250px;
+         bottom: 20px;
+}   
+
+button.btn{
+        border: 1px solid #FF79DA;
+        background-color: #FF79DA;
+        color: white;
+        border-radius: 25px;
+        width:170px;
+        height: 50px;
+        position:relative;
+        top: 30px;
+        left: 90px;
+}
+section.cardmenu a.order button.btn{
+        border-radius: 25px;
+        height: 30px;
+        font-size: 10px;
+        width:200px;
+        border-color:#FF79DA;
+        background-color: #9356dc;
+        cursor: pointer;
+}
+button.btn:hover {
+        background-color: #b79adb;
+        color: white;
 }
 
- .card-menu__title::after{ border-inline: 10px;}    
-      
-    
 
-     
+div.footpage1{
+        margin-top:70px
+}
+div.footpage1{display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        background: grey;
+        padding-bottom: 30px;
+   
+}
+div.footpage1 a i{color:white}
+/*-----Menu 2-----*/
+
+body.lanoteenchantee{
+        background-color: rgb(238, 234, 234);
+        box-sizing: border-box;
+        font-family:'Roboto',Shrikhand, cursive sans-serif;
+        font-size: 16px;
+   }
+button.btn{
+        border: 1px solid #FF79DA;
+        background-color: #FF79DA;
+        color: white;
+        border-radius: 25px;
+        width:170px;
+        height: 50px;
+        position:relative;
+        top: 30px;
+        left: 90px;
+}
+section.cardmenu a.order button.btn{
+        border-radius: 25px;
+        height: 30px;
+        font-size: 10px;
+        width:200px;
+        border-color:#FF79DA;
+        background-color: #9356dc;
+        cursor: pointer;
+}
+button.btn:hover{
+        background-color: #b79adb;
+        color: white;
+}
+div.footpage2{
+        margin-top:70px;
+        padding-bottom: 30px;
+}
+div.footpage2{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        background: grey;
+        margin-top:70px
+}
+div.footpage2 a i{color:white}  
+body.ledelicedessens{
+        background-color: rgb(238, 234, 234);
+        box-sizing: border-box;
+        font-family:'Roboto',Shrikhand, cursive sans-serif;
+        font-size: 16px;
+   }
+   /*-----Menu 3-----*/
+div.footpage3{
+        margin-top:70px;
+        padding-bottom: 30px;
+} 
+ /*-----Menu 3-----*/
+div.footpage4{
+        margin-top:70px;
+        padding-bottom: 30px;
+}
