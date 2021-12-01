@@ -154,6 +154,11 @@ section.dining__contain{
         padding-left: 5PX;
         box-sizing: border-box;
 }
+h2.dining__title{
+        margin-bottom: 20px;
+        padding-left: 10px;
+        font-family: 'Shrikhand';
+}
  div.dining__picture img{
         width:95%;
         height:170px;
@@ -207,39 +212,43 @@ div.dining__title h3{
         font-size: 16px;
         color: black;
 }
-div.dining__content a.content{
-        text-decoration: none;
-}
+
 div.dining__first div.heart{    
         position: absolute;
         right: 30px;
-        top: 935px;
+        top: 980px;
         color: black;
 }
 div.dining__second div.heart{    
         position: absolute;
         right: 30px;
-        top:1200px;
+        top:1250px;
         color: black;
 }
-div.dining__second a.content{
-        text-decoration: none;
-}
+
 div.dining__third div.heart{    
         position: absolute;
         right: 30px;
-        top: 1470px;
+        top: 1520px;
         color: black;
-}
-div.dining__third a.content{
-        text-decoration: none;
 }
 div.dining__fourth div.heart{    
         position: absolute;
         right: 30px;
-        top: 1740px;
+        top: 1790px;
         color: black;
 }
+div.dining__first a.content{
+        text-decoration: none;
+}
+div.dining__second a.content{
+        text-decoration: none;
+}
+div.dining__third a.content{
+        text-decoration: none;
+}
+
+
 div.dining__fourth a.content{
         text-decoration: none;
 }
