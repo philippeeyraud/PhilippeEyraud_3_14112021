@@ -20,7 +20,6 @@ header{
         align-items: center;
      
 }
-
 form button.map{       
         width: 25px;
         height: 25px;
@@ -80,79 +79,135 @@ section.discovery div.discover button.btn {
 }
 
 /*--------------------------fonctionement---------*/
-section.operation__contain{
-        margin-bottom:60px;}
-section.operation__contain h2.operation__title{
+section.operation__contain div.operation{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 50px;
+        align-content: center;
+}
+section div h1.operation__title{
         font-family: 'Shrikhand';
-        padding-left: 100px;
+        padding-left: 80px;
         margin-top: 30px;
         margin-bottom: 20px;
         position:relative;
         right:80px;
 }
-section.operation__contain button{
+div.operation button.btn1{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:center;
+        justify-content: space-evenly;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 25px;
         height: 30px;
         font-size: 15px;
         width:90%;
-        height:60px; 
-        background-color:#f1e6fd;
+        height:60px;
+        background-color:#99E2D0;
         border-color:transparent;
         margin-bottom: 20px;
-        position: relative;
-        left: 20px;
-        top: 0px;
+        
+      
+}
+div.operation button.btn1:hover{
+        background-color:#d2d8d7;
         color: black;
-        cursor: pointer; 
-        box-shadow: 4px 4px 4px 4px #ece4f5;
 }
-section.operation__contain button:hover {
-        background-color:#ece4f5;
-}
-section.operation__contain button.btngreen{
-        background-color: #dff7f1;
-        box-shadow: 4px 4px 4px 4px #dff7f1;
-}
-section.operation__contain button:hover {
-        background-color: #fbfdfd;
-       
-}
-section.operation__contain button.btnlightgreen{
-        background-color: #e5fdf7;
-        box-shadow: 4px 4px 4px 4px #fbfdfd;
-}
-section.operation__contain button:hover {
-        background-color: #fbfdfd;
-}
-span.number{   
-        border-radius: 50px;
-        background-color: #9356dc;
-        width: 30px;
+div.operation button.btn2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
         height: 30px;
-        color: white;
-        position: absolute;
-        left: -10px;
-        top: 12px;
-        font-size: 20px;
-}     
-
-.svg-inline--fa{position: relative;
-right: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#99E2D0;
+        border-color:transparent;
+        margin-bottom: 20px;
+        transition: transform;
 }
-.fa-store{color:#9356dc}
+div.operation button.btn2:hover{
+        background-color:#d2d8d7;
+        color: black;
+}
+div.operation button.btn3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px;
+        background-color:#FF79DA;        
+        border-color:transparent;
+        margin-bottom: 20px;
+        transition: transform ;
+}
+div.operation button.btn3:hover{
+        background-color:#fcb4e7;
+        color: black;
+}
+.fa-mobile-alt{
+        position: absolute;
+        left: 50px;
+        top: 415px;
+}
 
+.fa-list{
+        position: absolute;
+        left: 50px;
+        top: 490px;
+}
+.fa-store{
+        position:absolute;
+        color:#9356DC;
+        left:50px;
+        top: 570px;
+}
+div.operation .operation__number--1{ 
+        position: absolute;
+        top:410px;
+        left: 5px;
+        border-radius: 50%;
+        background-color: #9356DC;
+        border: px solid #9356DC;
+        color: white;
+        width:20px;
+        text-align: center;
+}
+div.operation .operation__number--2{
+        position: absolute;
+        top:490px;
+        left: 5px;
+        background-color: #9356DC;
+        border: px solid #9356DC;
+        color: white;
+        width:20px;
+        text-align: center;
+        border-radius: 50%;
+}
+div.operation .operation__number--3{ 
+        position: absolute;
+        top:570px;
+        left: 5px;
+        border-radius: 50%;
+        background-color: #9356DC;
+        border: px solid #9356DC;
+        color: white;
+        width:20px;
+        text-align: center;
+ }
 /************restaurants******/
 section.dining__contain{
         background-color:#99E2D0;
-        padding-bottom: 70px;
+        padding-bottom: 20px;
         padding-right: 5px;
         padding-left: 5PX;
         box-sizing: border-box;
+       
 }
  div.dining__picture img{
         width:95%;
@@ -161,7 +216,8 @@ section.dining__contain{
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         margin-left: 10px;
-}       
+} 
+    
 img.pictureone{
         display: flex;
 }
@@ -181,7 +237,7 @@ div.dining__content{
         justify-content:center;
         align-items: flex-start;
         height: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         background-color: white;
         border-radius: 0px 0px 10px 10px;
         height: 70px;
@@ -190,6 +246,7 @@ div.dining__content{
         margin-left: 10px;
         padding: 10px 0px 0px  10px;
         font-size: 20px;
+  
 }
 section.dining__contain div.dining__first{
 padding-top: 60px;
@@ -202,15 +259,19 @@ div.dining__first h1.dining__title{
 div.dining__title h4{
         color: black;
 }
+
 div.dining__title h3{  
         margin: 5px 0px 0px 0px;
         font-size: 16px;
         color: black;
+      
 }
-div.dining__content a.content{
+div.dining__first a.content{
         text-decoration: none;
 }
-div.dining__first div.heart{    
+
+
+ div.dining__first div.heart{    
         position: absolute;
         right: 30px;
         top: 935px;
@@ -221,6 +282,7 @@ div.dining__second div.heart{
         right: 30px;
         top:1200px;
         color: black;
+       
 }
 div.dining__second a.content{
         text-decoration: none;
