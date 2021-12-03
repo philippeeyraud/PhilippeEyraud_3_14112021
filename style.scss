@@ -10,15 +10,16 @@ body {
 header{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    a img.logo{
+    align-items: center;}
+   a img.logo{
         width:200px;
-        font-family: 'Shrikhand', cursive;
-        margin:10px 0px 10px 0px;}
-}
+        font-family: 'Shrikhand', cursive;  
+        margin:10px 0px 10px 0px;
+      }
+    
 
-form{
-    $green:#99d9e2;
+  form{
+    $green:#99E2D0;
     display: flex;
     background-color:$green;
     width:375px;
@@ -29,17 +30,19 @@ form{
             width: 25px;
             height: 25px;
             background-color:$green;
-            border: none;}
+            border: none;
+        }
         
         input.index{
             border: none;
             background-color: $green;}
-}
+          }
+        
     section.discovery{
         background-color:#caf5ea;
         padding-bottom: 40px;
         div h1 { margin: 30px 50px 10px 40px;
-        text-align: center;
+        text-align:center;
         font-family: 'Shrikhand', cursive;
         }
         div p{
@@ -51,8 +54,8 @@ form{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        line-height: 20px;
-        }
+        line-height: 20px;}
+       
             button.btn {
             border-radius: 25px;
             height: 30px;
@@ -61,146 +64,450 @@ form{
             border-color:#FF79DA;
             background-color: #9356dc;
             cursor: pointer;
-            color: white;
-            }
+            color: white;}
+            
             button.btn:hover{background-color: #b79adb;
                 color: white;
             }
-        
-}
-/*--------------------------fonctionement---------*/
-section.operation__contain div.operation{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-bottom: 50px;
-    align-content: center;
+        }  
 
-    h1.operation__title{font-family: 'Shrikhand';
-        padding-left: 80px;
+/*--------------------------fonctionement---------*/
+section.operation__contain{
+    margin-bottom:60px;
+}
+  h2.operation__title{
+        font-family: 'Shrikhand';
+        padding-left: 100px;
         margin-top: 30px;
         margin-bottom: 20px;
         position:relative;
         right:80px;
     }
-    div.operation{
-        .button.btn1{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border-radius: 25px;
-            height: 30px;
-            font-size: 15px;
-            width:90%;
-            height:60px;
-            background-color:#99E2D0;
-            border-color:transparent;
-            margin-bottom: 20px;
+  button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        border-radius: 20px;
+        height: 30px;
+        font-size: 15px;
+        width:90%;
+        height:60px; 
+        background-color:#f1e6fd;
+        border-color:transparent;
+        margin-bottom: 20px;
+        position: relative;
+        left: 20px;
+        top: 0px;
+        color: black;
+        cursor: pointer; 
+        box-shadow: 4px 4px 4px 4px #ece4f5;
+      
+      :hover {
+        background-color:#ece4f5;
+      }
+  
+      .btngreen{
+        background-color: #dff7f1;
+        box-shadow: 4px 4px 4px 4px #dff7f1;
+      
+      :hover {
+        background-color: #fbfdfd;
+       
         }
-        .button.btn1:hover{
-            background-color:#d2d8d7;
-            color: black;
-        }
-        button.btn2{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border-radius: 25px;
-            height: 30px;
-            font-size: 15px;
-            width:90%;
-            height:60px;
-            background-color:#99E2D0;
-            border-color:transparent;
-            margin-bottom: 20px;
-        }
-        .button.btn2:hover{
-            background-color:#d2d8d7;
-            color: black;
-        }
-        .button.btn3{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            border-radius: 25px;
-            height: 30px;
-            font-size: 15px;
-            width:90%;
-            height:60px;
-            background-color:#FF79DA;        
-            border-color:transparent;
-            margin-bottom: 20px;
-        }
-        .button.btn3:hover{
-            background-color:#fcb4e7;
-            color: black;
-        }
-    
-        div.operation__number--1{ 
-            position: absolute;
-            top:410px;
-            left: 5px;
-            border-radius: 50%;
-            background-color: #9356DC;
-            border: px solid #9356DC;
-            color: white;
-            width:20px;
-            text-align: center;
-        }
-
-        div.operation__number--2{
-            position: absolute;
-            top:490px;
-            left: 5px;
-            background-color: #9356DC;
-            border: px solid #9356DC;
-            color: white;
-            width:20px;
-            text-align: center;
-            border-radius: 50%;
-        }
-
-        div.operation__number--3{ 
-            position: absolute;
-            top:570px;
-            left: 5px;
-            border-radius: 50%;
-            background-color: #9356DC;
-            border: px solid #9356DC;
-            color: white;
-            width:20px;
-            text-align: center;
-        }
+      }
+      .btnlightgreen{
+        background-color: #e5fdf7;
+        box-shadow: 4px 4px 4px 4px #fbfdfd;
+      
+      :hover {
+        background-color: #fbfdfd;
+        
+      }
     }
-}
-.fa-mobile-alt{
-    position: absolute;
-    left: 50px;
-    top: 415px;
-}
-
-.fa-list{
-    position: absolute;
-    left: 50px;
-    top: 490px;
-}
+ span.number{   
+        border-radius: 50px;
+        background-color: #9356dc;
+        width: 30px;
+        height: 30px;
+        color: white;
+        position: absolute;
+        left: -10px;
+        top: 12px;
+        font-size: 20px;
+      }     
+.svg-inline--fa{position: relative;
+        right: 30px;
+        }
 .fa-store{
-    position:absolute;
-    color:#9356DC;
-    left:50px;
-    top: 570px;
+  color:#9356dc
+}
+/************restaurants******/
+section.dining__contain{
+  background-color:#99E2D0;
+  padding-bottom: 70px;
+  padding-right: 5px;
+  padding-left: 5PX;
+  box-sizing: border-box;
+
+  h2.dining__title{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-family: 'Shrikhand';
+  }
+    a.dining div.dining__picture img{
+      width:95%;
+      height:170px;
+      object-fit: cover;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      margin-left: 10px;
+      display: flex;
+      
+      .pictureone{
+        display: flex;}
+      }
+    }
+    a.content{
+          text-decoration: none;
+        
+      div.dining__content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: flex-start;
+        height: 60px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+        height: 70px;
+        width:92%;
+        padding-left:0px;
+        margin-left: 10px;
+        padding: 10px 0px 0px  10px;
+        font-size: 20px;
+        
+
+        title h4{
+        color: black;
+        }
+        div.dining__title h3{  
+          margin: 5px 0px 0px 0px;
+          font-size: 16px;
+          color: black;
+        }
+        div.heart{
+          lapalettedugout{    
+          position: absolute;
+          right: 30px;
+          top: 980px;
+          color: black;
+          }
+          lanoteenchantee{ 
+            position: absolute;
+            right: 30px;
+            top: 980px;
+            color: black;
+          }
+          alafrancaise{ 
+            position:absolute;
+            right: 30px;
+            top: 980px;
+            color: black;
+          }
+          ledelicedessens{
+            position: absolute;
+            right: 30px;
+            top: 980px;
+            color: black;
+          } 
+        }   
+      }  
+    }     
+          .svg-inline--fa{
+            font-size: 25px;
+          } 
+ /*----footer-----*/
+div.footpage{
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  background: grey;
+  padding-bottom: 30px;
+  a i{ 
+    color:white
+
+  img.footerlogo{
+    width:80px;
+    font-family: 'Shrikhand', cursive;
+    margin:20px 0px 0px 10px;
+    filter: invert(100%);
+    -webkit-filter: white(100%);
+    .fa-utensils{
+      position: relative;
+      left: 10px;
+      top: 15px;
+      color: white;
+    }
+  }
+  a.footup{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    .fa-staylinked{
+      position: relative;
+      right:175px;
+      top: 20px;
+      color: white;
+    }
+  }
+  a.foot{
+    text-decoration: none;
+    h3{
+      margin-left:10px;
+      font-size:16px;
+      font-weight: 200; 
+      color:white;   
+    }
+/*-----Menu 1-----*/
+*{      
+  margin: 0px;
+  padding: 0px;
 }
 
-/************restaurants******/
 
+body.lapalettedugout{
+  background-color:    rgb(238, 234, 234);
+  box-sizing: border-box;
+  font-family:'Roboto',Shrikhand, cursive sans-serif;
+  font-size: 16px;
+  div.backarrow{
+    width: 30px;
+    position: relative;
+    right: 50px;
+    top: 15px;}
+  img.logo {
+      width: 200PX;
+    } 
+  
+img.picture{
+  width: 100%;
+}
+h1.card__title{ 
+  margin: 30px 50px 10px 40px;
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+}
 
+div.card-menu .card-menu__title{margin:20px 0px 0px 10px ;
+  border-inline-color: green;
+}
+/*-----starter------*/
 
+section.card-menu{
+  padding: 0px 10px 0px 10px;
+}
+div.card-menu__starter{ 
+    h4.card-menu__title{
+    padding-bottom:5px;
+    width: 10%;
+    color: black;
+    margin: 30px 0px 15px 0px;
+    border-bottom : 1px solid lightgrey;
+    border-width: 3px;
+    text-decoration: none;}
+}
 
+div.starter__content{
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  margin:10px 0px 10px 0px;
+  padding-left:10px;
+  height: 69px;
 
+    a.card-menu__starter{
+      text-decoration: none;
+      color: black;
+    }
+    div.starter__title{
+        padding: 15px 0px 3px 0px;
+    }
+    div.starter__price{ 
+      width: 20px;
+      position: relative;
+      left: 230px;
+      bottom: 18px;
+    }
+    div.check__icon--check{
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 72px;
+    left: 290px;
+    width: 60px;
+    height: 70px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #99E2D0;
+    
+      .fa-check-circle{
+        color:#99E2D0;
+        background-color: white;
+        border-radius: 50PX;
+        font-size: 35px; 
+      }
+    }
+  }
 
+/*---menumain---*/
+div.card-menu__main {
+  
+  h4.card-menu__title{
+    padding-bottom:5px;
+    width: 10%;
+    color: black;
+    margin: 30px 0px 15px 0px;
+    border-bottom : 1px solid lightgrey;
+    border-width: 3px;
+    text-decoration: none;
+  }
+}
+div.main__content{
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  margin:10px 0px 10px 0px;
+  padding-left:10px;
+  height: 69px;
 
+  a.card-menu__main{
+    text-decoration: none;
+    color: black;
+  }
+  div.main__title{
+    padding: 15px 0px 3px 0px;
+  }
+  div.main__price{ 
+    width: 20px;
+    position: relative;
+    left: 250px;
+    bottom: 20px;
+  }
+} 
+div.card-menu__dessert {
+  h4.card-menu__title{
+  padding-bottom:5px;
+  width: 10%;
+  color: black;
+  margin: 30px 0px 15px 0px;
+  border-bottom : 1px solid lightgrey;
+  border-width: 3px;
+  text-decoration: none;
+  }
+}
+div.dessert__content{
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  margin:10px 0px 10px 0px;
+  padding-left:10px;
+  height: 69px;
 
+  a.card-menu__dessert{
+    text-decoration: none;
+    color: black;
+  }  
+  div.dessert__title{
+    padding: 15px 0px 3px 0px;
+  }
+  div.dessert__price{ 
+    width: 20px;
+    position: relative;
+    left: 250px;
+    bottom: 20px;
+  }   
+}
+button.btn{
+  border: 1px solid #FF79DA;
+  background-color: #FF79DA;
+  color: white;
+  border-radius: 25px;
+  width:170px;
+  height: 50px;
+  position:relative;
+  top: 30px;
+  left: 90px;
+}
+section.cardmenu{
+
+  a.order button.btn{
+    border-radius: 25px;
+    height: 30px;
+    font-size: 10px;
+    width:200px;
+    border-color:#FF79DA;
+    background-color: #9356dc;
+    cursor: pointer;
+  }
+
+    button.btn:hover {
+    background-color: #b79adb;
+    color: white;
+  }
+}
+div.footpage1{
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  background: grey;
+  padding-bottom: 30px;
+  margin-top:70px;
+        a i{color:white
+  }
+}
+
+/*-----Menu 2-----*/
+
+body.lanoteenchantee{
+  background-color: rgb(238, 234, 234);
+  box-sizing: border-box;
+  font-family:'Roboto',Shrikhand, cursive sans-serif;
+  font-size: 16px;
+}
+section.cardmenu{
+  a.order button.btn{
+    border-radius: 25px;
+    height: 30px;
+    font-size: 10px;
+    width:200px;
+    border-color:#FF79DA;
+    background-color: #9356dc;
+    cursor: pointer;}
+  }
+  button.btn{
+    border: 1px solid #FF79DA;
+    background-color: #FF79DA;
+    color: white;
+    border-radius: 25px;
+    width:170px;
+    height: 50px;
+    position:relative;
+    top: 30px;
+    left: 90px;
+  }
+  button.btn:hover{
+    background-color: #b79adb;
+    color: white;
+  }
+}
 
 
 
