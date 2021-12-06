@@ -1,135 +1,122 @@
-*{      
+* {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  font-family:'Roboto',Shrikhand, cursive sans-serif;
+  font-family: 'Roboto',Shrikhand, cursive sans-serif;
   font-size: 16px;
-  
+}
 
-}
-img.logo{
-  width:200px;
-  font-family: 'Shrikhand', cursive;
-  margin:10px 0px 10px 0px;
-}
-header{
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-form button.map{       
-  width: 25px;
-  height: 25px;
-  background-color:#99E2D0;
-  border: none;
+header img.logo {
+  width: 200px;
+  font-family: 'Shrikhand', cursive;
+  margin: 10px 0px 10px 0px;
 }
-input.index{
-  border: none;
-  background-color: #99e2d0;}
 
-form{  
+form {
   display: flex;
   background-color: #99E2D0;
-  width:375px;
+  width: 375px;
   justify-content: center;
   box-shadow: 3px 1px 1px 1px lightgrey;
-  border:1px solid #99E2D0;
+  border: 1px solid #99E2D0;
 }
-section.discovery div h1{   
+
+form button.map {
+  width: 25px;
+  height: 25px;
+  background-color: #99E2D0;
+  border: none;
+}
+
+form input.index {
+  border: none;
+  background-color: #99E2D0;
+}
+
+section.discovery {
+  background-color: #caf5ea;
+  padding-bottom: 40px;
+}
+
+section.discovery div.discover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 20px;
+  align-items: center;
+}
+
+section.discovery div.discover h1 {
   margin: 30px 50px 10px 40px;
   text-align: center;
   font-family: 'Shrikhand', cursive;
 }
-section.discovery{
-  background-color:#caf5ea;
-  padding-bottom: 40px;
-}
 
-section div.discover{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  line-height: 20px;
-  align-items: flex-start;
-}   
-section.discovery div p{
+section.discovery div.discover p {
   padding: 15px 23px 15px 22px;
-  text-align: center;      
+  text-align: center;
 }
 
 section.discovery div.discover button.btn {
   border-radius: 25px;
   height: 30px;
   font-size: 10px;
-  width:200px;
-  border-color:#FF79DA;
+  width: 200px;
+  border-color: #FF79DA;
   background-color: #9356dc;
-  cursor: pointer;    
+  cursor: pointer;
   position: relative;
   top: 0px;
   color: white;
 }
-button.btn:hover {
+
+section.discovery div.discover button.btn:hover {
   background-color: #b79adb;
   color: white;
 }
 
-/*--------------------------fonctionement---------*/
-section.operation__contain{
-  margin-bottom:60px;}
-section.operation__contain h2.operation__title{
+section.operation__contain {
+  padding: 25px 0px 25px 0px;
+  background-color: white;
+}
+
+section.operation__contain h2.operation__title {
   font-family: 'Shrikhand';
   padding-left: 100px;
   margin-top: 30px;
   margin-bottom: 20px;
-  position:relative;
-  right:80px;
+  position: relative;
+  right: 80px;
 }
-section.operation__contain button{
+
+section.operation__contain button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   border-radius: 20px;
   height: 30px;
   font-size: 15px;
-  width:90%;
-  height:60px; 
-  background-color:#f1e6fd;
-  border-color:transparent;
+  width: 90%;
+  height: 60px;
+  border-color: transparent;
   margin-bottom: 20px;
   position: relative;
   left: 20px;
   top: 0px;
   color: black;
-  cursor: pointer; 
-  box-shadow: 4px 4px 4px 4px #ece4f5;
 }
-section.operation__contain button:hover {
-  background-color:#ece4f5;
-}
-section.operation__contain button.btngreen{
-  background-color: #dff7f1;
-  box-shadow: 4px 4px 4px 4px #dff7f1;
-}
-section.operation__contain button:hover {
-  background-color: #fbfdfd;
- 
-}
-section.operation__contain button.btnlightgreen{
-  background-color: #e5fdf7;
-  box-shadow: 4px 4px 4px 4px #fbfdfd;
-}
-section.operation__contain button:hover {
-  background-color: #fbfdfd;
-}
-span.number{   
+
+section.operation__contain button span.number {
   border-radius: 50px;
   background-color: #9356dc;
   width: 30px;
@@ -139,223 +126,300 @@ span.number{
   left: -10px;
   top: 12px;
   font-size: 20px;
-}     
-
-.svg-inline--fa{position: relative;
-right: 30px;
+  cursor: pointer;
 }
-.fa-store{color:#9356dc}
 
-/************restaurants******/
-section.dining__contain{
-  background-color:#99E2D0;
-  padding-bottom: 70px;
+section.operation__contain button .svg-inline--fa {
+  position: relative;
+  right: 30px;
+}
+
+section.operation__contain button .fa-store {
+  color: #9356dc;
+}
+
+section.operation__contain .btn__green {
+  background-color: #dff7f1;
+  box-shadow: 2px 2px 2px 2px #dff7f1;
+  cursor: pointer;
+}
+
+section.operation__contain .btn__green:hover {
+  background-color: #f1f8f6;
+}
+
+section.operation__contain .btn__lightgreen {
+  background-color: #e5fdf7;
+  box-shadow: 2px 2px 2px 2px #e5fdf7;
+  cursor: pointer;
+}
+
+section.operation__contain .btn__lightgreen:hover {
+  background-color: #fbfdfd;
+}
+
+section.operation__contain .btn__purple {
+  background-color: #ece4f5;
+  box-shadow: 2px 2px 2px 2px #efeaf5;
+  cursor: pointer;
+}
+
+section.operation__contain .btn__purple:hover {
+  background-color: #f5f3f7;
+}
+
+section.dining__contain {
+  padding-top: 40px;
+  padding-bottom: 50px;
   padding-right: 5px;
   padding-left: 5PX;
   box-sizing: border-box;
 }
-h2.dining__title{
+
+section.dining__contain h2.dining__title {
   margin-bottom: 20px;
   padding-left: 10px;
   font-family: 'Shrikhand';
 }
-div.dining__picture img{
-  width:95%;
-  height:170px;
+
+section.dining__contain div.dining__picture a.dining img {
+  width: 95%;
+  height: 170px;
   object-fit: cover;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   margin-left: 10px;
   display: flex;
-}       
+}
 
-div.dining__content{
+section.dining__contain div.dining__content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: flex-start;
   height: 60px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 0px 0px 10px 10px;
   height: 70px;
-  width:92%;
-  padding-left:0px;
+  width: 92%;
+  padding-left: 0px;
   margin-left: 10px;
   padding: 10px 0px 0px  10px;
   font-size: 20px;
 }
 
+section.dining__contain div.dining__content a.content {
+  text-decoration: none;
+}
 
-div.dining__title h4{
+section.dining__contain div.dining__content a.content div.dining__title h4 {
   color: black;
 }
-div.dining__title h3{  
+
+section.dining__contain div.dining__content a.content div.dining__title h3 {
   margin: 5px 0px 0px 0px;
   font-size: 16px;
   color: black;
 }
 
+section.dining__contain div.dining__content a.content div.heart__palettedugout {
+  position: absolute;
+  right: 20px;
+  top: 970px;
+  color: black;
+}
 
-div.heart__palettedugout{    
-  position: absolute;
-  right: 0px;
-  top: 920px;
-  color: black;
-}
-div.heart__lanoteenchantee{    
-  position: absolute;
-  right: 0px;
-  top: 1190px;
-  color: black;
-}
-div.heart__alafrancaise{    
-  position: absolute;
-  right: 0px;
-  top:1460px;
-  color: black;
-}
-div.heart__ledelicedessens{    
-  position: absolute;
-  right: 0px;
-  top: 1720px;
-  color: black;
-}
-a.content{
-  text-decoration: none;
-}
-.svg-inline--fa{
+section.dining__contain div.dining__content a.content div.heart__palettedugout .svg-inline--fa {
   font-size: 25px;
 }
 
-/*----footer-----*/
-img.footerlogo{
-  width:80px;
-  font-family: 'Shrikhand', cursive;
-  margin:20px 0px 0px 10px;
-  filter: invert(100%);
-  -webkit-filter: white(100%);
-  
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee {
+  position: absolute;
+  right: 20px;
+  top: 1240px;
+  color: black;
 }
-div.footpage{display: flex;
+
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .svg-inline--fa {
+  font-size: 25px;
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise {
+  position: absolute;
+  right: 20px;
+  top: 1510px;
+  color: black;
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise .svg-inline--fa {
+  font-size: 25px;
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens {
+  position: absolute;
+  right: 20px;
+  top: 1775px;
+  color: black;
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens .svg-inline--fa {
+  font-size: 25px;
+}
+
+div.footpage {
+  display: flex;
   flex-direction: column;
   line-height: 20px;
   background: grey;
   padding-bottom: 30px;
 }
-div.footpage a i{ 
-  color:white}
-a.footup{
+
+div.footpage a img.footerlogo {
+  width: 80px;
+  font-family: 'Shrikhand', cursive;
+  margin: 20px 0px 0px 10px;
+  filter: invert(100%);
+  -webkit-filter: white(100%);
+}
+
+div.footpage a i {
+  color: white;
+}
+
+div.footpage a.footup {
   margin-left: 30px;
   text-decoration: none;
   color: black;
 }
-a.foot{
-  text-decoration: none;
-  
-}
-h3{
-  margin-left:10px;
-  font-size:16px;
-  font-weight: 200; 
-  color:white;   
-}
-.fa-staylinked{
+
+div.footpage a.footup .fa-staylinked {
   position: relative;
-  right:175px;
+  right: 175px;
   top: 20px;
   color: white;
 }
-.fa-utensils{
+
+div.footpage a.foot {
+  text-decoration: none;
+}
+
+div.footpage a.foot h3 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  color: white;
+}
+
+div.footpage .fa-utensils {
   position: relative;
   left: 10px;
   top: 15px;
   color: white;
 }
+
 /*-----Menu 1-----*/
-*{      
+* {
   margin: 0px;
   padding: 0px;
 }
-body.lapalettedugout{
-  background-color:    rgb(238, 234, 234);
-  box-sizing: border-box;
-  font-family:'Roboto',Shrikhand, cursive sans-serif;
-  font-size: 16px;
-  }
 
-.backarrow{
+body {
+  background-color: #eeeaea;
+  box-sizing: border-box;
+  font-family: 'Roboto',Shrikhand, cursive sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+body header {
+  align-items: initial;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img.backarrow {
   width: 30px;
   position: relative;
   right: 50px;
   top: 15px;
 }
+
 img.logo {
   width: 200PX;
-} 
-img.picture{
+}
+
+img.picture {
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
-h1.card__title{ 
-  margin: 30px 50px 10px 40px;
-  text-align:start;
+
+div.menu {
+  padding: 15px;
+  margin-top: -15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #eeeaea;
+}
+
+div.menu h1.card__title {
+  margin: 20px 15px 5px 0px;
   font-family: 'Shrikhand', cursive;
-  font-size:25px;
+  font-size: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-div.card__heart{
+div.card__heart {
   position: absolute;
-  right: 10px;
-  top: 380px;
+  right: 45px;
+  top: 335px;
+  font-size: 25px;
 }
-div.card-menu .card-menu__title{margin:20px 0px 0px 10px ;
-  border-inline-color: green;
-}
-/*-----starter------*/
 
-section.card-menu{
-  padding: 0px 10px 0px 10px;
+section.card-menu {
+  padding: 0px 10px 60px 10px;
 }
-div.card-menu__starter h4.card-menu__title{
-  
-  padding-bottom:5px;
+
+section.card-menu div.card-menu__starter div.starter__title h4 {
+  padding-bottom: 5px;
   width: 10%;
   color: black;
   margin: 30px 0px 15px 0px;
-  border-bottom : 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   border-width: 3px;
   text-decoration: none;
 }
-a.card-menu__starter{
-  text-decoration: none;
-  color: black;
-}
-div.starter__content{
+
+section.card-menu div.starter__content {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
-  margin:10px 0px 10px 0px;
-  padding-left:10px;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
   height: 69px;
-  } 
-  
-div.starter__title{
+}
+
+section.card-menu div.starter__content a.card-menu__starter {
+  text-decoration: none;
+  color: black;
+}
+
+section.card-menu div.starter__content a.card-menu__starter div.starter__title {
   padding: 15px 0px 3px 0px;
 }
-div.starter__price{ 
+
+section.card-menu div.starter__content a.card-menu__starter div.starter__price {
   width: 20px;
   position: relative;
   left: 230px;
   bottom: 18px;
 }
-.fa-check-circle{
-  color:#99E2D0;
-  background-color: white;
-  border-radius: 50PX;
-  font-size: 35px; 
-}
-div.check__icon--check{
+
+section.card-menu div.starter__content a.card-menu__starter div.check__icon--check {
   display: flex;
   direction: column;
   flex-wrap: wrap;
@@ -371,159 +435,205 @@ div.check__icon--check{
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #99E2D0;
- 
 }
 
-/*---main---*/
-
-a.card-menu__main{
-  text-decoration: none;
-  color: black;
+section.card-menu div.starter__content a.card-menu__starter div.check__icon--check .fa-check-circle {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50PX;
+  font-size: 35px;
 }
-div.card-menu__main h4.card-menu__title{
-  
-  padding-bottom:5px;
+
+section.card-menu div.card-menu__main h4.card-menu__title {
+  padding-bottom: 5px;
   width: 10%;
   color: black;
   margin: 30px 0px 15px 0px;
-  border-bottom : 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   border-width: 3px;
   text-decoration: none;
 }
-div.main__content{
+
+section.card-menu div.main__content {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
-  margin:10px 0px 10px 0px;
-  padding-left:10px;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
   height: 69px;
-} 
-div.main__title{
-  padding: 15px 0px 3px 0px;
-  }
-div.main__price{ 
-  width: 20px;
-   position: relative;
-   left: 250px;
-   bottom: 20px;
 }
-a.card-menu__dessert{
+
+section.card-menu div.main__content a.card-menu__main {
   text-decoration: none;
   color: black;
-}    
-div.card-menu__dessert h4.card-menu__title{
-  padding-bottom:5px;
+}
+
+section.card-menu div.main__content a.card-menu__main div.main__title {
+  padding: 15px 0px 3px 0px;
+}
+
+section.card-menu div.main__content a.card-menu__main div.main__price {
+  width: 20px;
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+}
+
+section.card-menu div.main__content a.card-menu__main div.check__icon--check {
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 72px;
+  left: 290px;
+  width: 60px;
+  height: 70px;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
+}
+
+section.card-menu div.main__content a.card-menu__main div.check__icon--check .fa-check-circle {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50PX;
+  font-size: 35px;
+}
+
+section.card-menu div.card-menu__dessert {
+  text-decoration: none;
+  color: black;
+}
+
+section.card-menu div.card-menu__dessert h4.card-menu__title {
+  padding-bottom: 5px;
   width: 10%;
   color: black;
   margin: 30px 0px 15px 0px;
-  border-bottom : 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   border-width: 3px;
   text-decoration: none;
 }
-div.dessert__content{
+
+section.card-menu div.dessert__content {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
-  margin:10px 0px 10px 0px;
-  padding-left:10px;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
   height: 69px;
 }
-div.dessert__title{
+
+section.card-menu div.dessert__content a.card-menu__dessert {
+  text-decoration: none;
+  color: black;
+}
+
+section.card-menu div.dessert__content a.card-menu__dessert div.dessert__title {
   padding: 15px 0px 3px 0px;
 }
-div.dessert__price{ 
-  width: 20px;
-   position: relative;
-   left: 250px;
-   bottom: 20px;
-}   
 
-button.btn{
+section.card-menu div.dessert__content a.card-menu__dessert div.dessert__price {
+  width: 20px;
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+}
+
+section.card-menu div.dessert__content a.card-menu__dessert div.check__icon--check {
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 72px;
+  left: 290px;
+  width: 60px;
+  height: 70px;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
+}
+
+section.card-menu div.dessert__content a.card-menu__dessert div.check__icon--check .fa-check-circle {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50PX;
+  font-size: 35px;
+}
+
+section.card-menu button.btn {
   border: 1px solid #FF79DA;
   background-color: #FF79DA;
   color: white;
   border-radius: 25px;
-  width:170px;
+  width: 170px;
   height: 50px;
-  position:relative;
+  position: relative;
   top: 30px;
   left: 90px;
   cursor: pointer;
 }
-button.btn:hover {
+
+section.card-menu button.btn:hover {
   background-color: #e9dbfa;
   color: white;
 }
 
-
-
-
-div.footpage1{display: flex;
-  flex-direction: column;
-  line-height: 20px;
-  background: grey;
-  padding-bottom: 30px;
-  margin-top:70px
-
-}
-div.footpage1 a i{color:white}
-/*-----Menu 2-----*/
-
-body.lanoteenchantee{
-  background-color: rgb(238, 234, 234);
-  box-sizing: border-box;
-  font-family:'Roboto',Shrikhand, cursive sans-serif;
-  font-size: 16px;
-}
-button.btn{
-  border: 1px solid #FF79DA;
-  background-color: #FF79DA;
-  color: white;
-  border-radius: 25px;
-  width:170px;
-  height: 50px;
-  position:relative;
-  top: 30px;
-  left: 90px;
-}
-section.cardmenu a.order button.btn{
-  border-radius: 25px;
-  height: 30px;
-  font-size: 10px;
-  width:200px;
-  border-color:#FF79DA;
-  background-color: #9356dc;
-  cursor: pointer;
-}
-button.btn:hover{
-  background-color: #b79adb;
-  color: white;
-}
-div.footpage2{
-  margin-top:70px;
-  padding-bottom: 30px;
-}
-div.footpage2{
+div.footpage1 {
   display: flex;
   flex-direction: column;
   line-height: 20px;
   background: grey;
-  margin-top:70px
+  padding-bottom: 30px;
 }
-div.footpage2 a i{color:white}  
-body.ledelicedessens{
-  background-color: rgb(238, 234, 234);
-  box-sizing: border-box;
-  font-family:'Roboto',Shrikhand, cursive sans-serif;
+
+div.footpage1 a img.footerlogo {
+  width: 80px;
+  font-family: 'Shrikhand', cursive;
+  margin: 20px 0px 0px 10px;
+  filter: invert(100%);
+  -webkit-filter: white(100%);
+}
+
+div.footpage1 a i {
+  color: white;
+}
+
+div.footpage1 a.footup {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+div.footpage1 a.footup .fa-staylinked {
+  position: relative;
+  right: 175px;
+  top: 20px;
+  color: white;
+}
+
+div.footpage1 a.foot {
+  text-decoration: none;
+}
+
+div.footpage1 a.foot h3 {
+  margin-left: 10px;
   font-size: 16px;
+  font-weight: 200;
+  color: white;
 }
-/*-----Menu 3-----*/
-div.footpage3{
-  margin-top:70px;
-  padding-bottom: 30px;
-} 
-/*-----Menu 3-----*/
-div.footpage4{
-  margin-top:70px;
-  padding-bottom: 30px;
+
+div.footpage1 .fa-utensils {
+  position: relative;
+  left: 10px;
+  top: 15px;
+  color: white;
 }
