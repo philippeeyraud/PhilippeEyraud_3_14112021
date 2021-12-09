@@ -1,11 +1,37 @@
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens, section.dining__contain div.dining__content a.content div.heart__alafrancaise, section.dining__contain div.dining__content a.content div.heart__lanoteenchantee, section.dining__contain div.dining__content a.content div.heart__palettedugout {
+  position: absolute;
+  right: 20px;
+  color: #242222;
+}
+
+div.footpage {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  background: #353535;
+  padding-bottom: 70px;
+}
+
+div.footpage a img.footerlogo {
+  width: 110px;
+  font-family: 'Shrikhand', cursive;
+  margin: 20px 0px 0px 15px;
+  filter: invert(100%);
+  -webkit-filter: white(100%);
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  font-family: 'Roboto',Shrikhand, cursive sans-serif;
+  background-color: white;
   font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 100%;
 }
 
 header {
@@ -22,27 +48,34 @@ header img.logo {
 
 form {
   display: flex;
-  background-color: #99E2D0;
+  background-color: #eaeaeb;
   width: 375px;
   justify-content: center;
-  box-shadow: 3px 1px 1px 1px lightgrey;
-  border: 1px solid #99E2D0;
+  box-shadow: 3px 1px 3px 1px white;
+  border: 1px solid white;
+  height: 40px;
+  column-gap: 0px;
+  align-items: center;
 }
 
 form button.map {
-  width: 25px;
-  height: 25px;
-  background-color: #99E2D0;
+  width: 40px;
+  height: 40px;
+  background-color: #eaeaeb;
   border: none;
+  align-items: center;
 }
 
 form input.index {
   border: none;
-  background-color: #99E2D0;
+  background-color: #eaeaeb;
+  height: 20px;
+  font-size: 15px;
+  width: 140px;
 }
 
 section.discovery {
-  background-color: #caf5ea;
+  background-color: #f6f6f6;
   padding-bottom: 40px;
 }
 
@@ -57,7 +90,8 @@ section.discovery div.discover {
 section.discovery div.discover h1 {
   margin: 30px 50px 10px 40px;
   text-align: center;
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Roboto', sans-serif;
+  width: 280px;
 }
 
 section.discovery div.discover p {
@@ -66,20 +100,23 @@ section.discovery div.discover p {
 }
 
 section.discovery div.discover button.btn {
+  border: 1px solid white;
   border-radius: 25px;
-  height: 30px;
-  font-size: 10px;
-  width: 200px;
-  border-color: #FF79DA;
-  background-color: #9356dc;
+  height: 40px;
+  font-size: 12px;
+  width: 160px;
+  border-color: transparent;
+  background: linear-gradient(#f27be0, #b374e0);
+  box-shadow: 1px 1px 1px 1px #f196e4;
   cursor: pointer;
   position: relative;
-  top: 0px;
+  top: 10px;
+  left: 5px;
   color: white;
 }
 
 section.discovery div.discover button.btn:hover {
-  background-color: #b79adb;
+  background-color: #9356dc;
   color: white;
 }
 
@@ -89,7 +126,7 @@ section.operation__contain {
 }
 
 section.operation__contain h2.operation__title {
-  font-family: 'Shrikhand';
+  font-family: 'Roboto', sans-serif;
   padding-left: 100px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -119,56 +156,66 @@ section.operation__contain button {
 section.operation__contain button span.number {
   border-radius: 50px;
   background-color: #9356dc;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 23px;
   color: white;
   position: absolute;
   left: -10px;
-  top: 12px;
-  font-size: 20px;
+  top: 13px;
+  font-size: 16px;
   cursor: pointer;
+  padding-top: 6px;
+}
+
+section.operation__contain button svg .fa-mobile-alt {
+  padding-left: 25px;
 }
 
 section.operation__contain button .svg-inline--fa {
   position: relative;
-  right: 30px;
+  right: 35px;
+  margin-right: 10px;
 }
 
 section.operation__contain button .fa-store {
   color: #9356dc;
 }
 
-section.operation__contain .btn__green {
-  background-color: #dff7f1;
+section.operation__contain .btn__grey {
+  background-color: #f6f6f6;
   box-shadow: 2px 2px 2px 2px #dff7f1;
   cursor: pointer;
+  font-weight: bold;
 }
 
-section.operation__contain .btn__green:hover {
-  background-color: #f1f8f6;
+section.operation__contain .btn__grey:hover {
+  background-color: white;
 }
 
-section.operation__contain .btn__lightgreen {
-  background-color: #e5fdf7;
+section.operation__contain .btn__lightgrey {
+  background-color: #f6f6f6;
   box-shadow: 2px 2px 2px 2px #e5fdf7;
   cursor: pointer;
+  font-weight: bold;
 }
 
-section.operation__contain .btn__lightgreen:hover {
-  background-color: #fbfdfd;
+section.operation__contain .btn__lightgrey:hover {
+  background-color: white;
 }
 
 section.operation__contain .btn__purple {
-  background-color: #ece4f5;
+  background-color: #f3edff;
   box-shadow: 2px 2px 2px 2px #efeaf5;
   cursor: pointer;
+  font-weight: bold;
 }
 
 section.operation__contain .btn__purple:hover {
-  background-color: #f5f3f7;
+  background-color: #f8f3fd;
 }
 
 section.dining__contain {
+  background-color: #f8f8f8;
   padding-top: 40px;
   padding-bottom: 50px;
   padding-right: 5px;
@@ -179,7 +226,8 @@ section.dining__contain {
 section.dining__contain h2.dining__title {
   margin-bottom: 20px;
   padding-left: 10px;
-  font-family: 'Shrikhand';
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 section.dining__contain div.dining__picture a.dining img {
@@ -222,13 +270,11 @@ section.dining__contain div.dining__content a.content div.dining__title h3 {
   margin: 5px 0px 0px 0px;
   font-size: 16px;
   color: black;
+  font-weight: 300;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout {
-  position: absolute;
-  right: 20px;
-  top: 970px;
-  color: black;
+  top: 980px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .svg-inline--fa {
@@ -236,10 +282,7 @@ section.dining__contain div.dining__content a.content div.heart__palettedugout .
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee {
-  position: absolute;
-  right: 20px;
-  top: 1240px;
-  color: black;
+  top: 1250px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .svg-inline--fa {
@@ -247,10 +290,7 @@ section.dining__contain div.dining__content a.content div.heart__lanoteenchantee
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise {
-  position: absolute;
-  right: 20px;
-  top: 1510px;
-  color: black;
+  top: 1520px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .svg-inline--fa {
@@ -258,97 +298,59 @@ section.dining__contain div.dining__content a.content div.heart__alafrancaise .s
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens {
-  position: absolute;
-  right: 20px;
-  top: 1775px;
-  color: black;
+  top: 1785px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .svg-inline--fa {
   font-size: 25px;
 }
 
-div.footpage {
-  display: flex;
-  flex-direction: column;
-  line-height: 20px;
-  background: grey;
-  padding-bottom: 30px;
-}
-
-div.footpage a img.footerlogo {
-  width: 80px;
-  font-family: 'Shrikhand', cursive;
-  margin: 20px 0px 0px 10px;
-  filter: invert(100%);
-  -webkit-filter: white(100%);
-}
-
-div.footpage a i {
+div.footpage a {
   color: white;
 }
 
-div.footpage a.footup {
-  margin-left: 30px;
-  text-decoration: none;
-  color: black;
-}
-
-div.footpage a.footup .fa-staylinked {
+div.footpage .fa-staylinked {
   position: relative;
-  right: 175px;
-  top: 20px;
+  left: 15px;
+  top: 25px;
   color: white;
 }
 
-div.footpage a.foot {
-  text-decoration: none;
+div.footpage p.weight {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 40px;
+  line-height: 3px;
 }
 
-div.footpage a.foot h3 {
-  margin-left: 10px;
+div.footpage p {
   font-size: 16px;
   font-weight: 200;
   color: white;
+  margin-left: 15px;
+  margin-top: 15px;
+  line-height: 20px;
 }
 
 div.footpage .fa-utensils {
   position: relative;
-  left: 10px;
-  top: 15px;
+  left: 15px;
+  top: 25px;
   color: white;
 }
 
 /*-----Menu 1-----*/
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  background-color: #eeeaea;
-  box-sizing: border-box;
-  font-family: 'Roboto',Shrikhand, cursive sans-serif;
-  font-size: 16px;
-  width: 100%;
-}
-
-body header {
-  align-items: initial;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 img.backarrow {
   width: 30px;
   position: relative;
-  right: 50px;
-  top: 15px;
+  right: 150px;
+  top: 45px;
 }
 
 img.logo {
-  width: 200PX;
+  width: 160PX;
+  padding-left: 20px;
 }
 
 img.picture {
@@ -357,12 +359,27 @@ img.picture {
   z-index: -1;
 }
 
+section.card-menu {
+  padding: 10px 10px 60px 10px;
+  background-color: #f6f6f6;
+}
+
+section.card-menu h4.card-menu__title {
+  padding-bottom: 5px;
+  width: 10%;
+  color: black;
+  margin: 30px 0px 15px 0px;
+  border-bottom: 1px solid lightgrey;
+  border-width: 3px;
+  text-decoration: none;
+}
+
 div.menu {
+  background-color: #f8f8f8;
   padding: 15px;
   margin-top: -15px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-color: #eeeaea;
 }
 
 div.menu h1.card__title {
@@ -376,200 +393,11 @@ div.menu h1.card__title {
 div.card__heart {
   position: absolute;
   right: 45px;
-  top: 335px;
+  top: 365px;
   font-size: 25px;
 }
 
-section.card-menu {
-  padding: 0px 10px 60px 10px;
-}
-
-section.card-menu div.card-menu__starter div.starter__title h4 {
-  padding-bottom: 5px;
-  width: 10%;
-  color: black;
-  margin: 30px 0px 15px 0px;
-  border-bottom: 1px solid lightgrey;
-  border-width: 3px;
-  text-decoration: none;
-}
-
-section.card-menu div.starter__content {
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 10px;
-  margin: 10px 0px 10px 0px;
-  padding-left: 10px;
-  height: 69px;
-}
-
-section.card-menu div.starter__content a.card-menu__starter {
-  text-decoration: none;
-  color: black;
-}
-
-section.card-menu div.starter__content a.card-menu__starter div.starter__title {
-  padding: 15px 0px 3px 0px;
-}
-
-section.card-menu div.starter__content a.card-menu__starter div.starter__price {
-  width: 20px;
-  position: relative;
-  left: 230px;
-  bottom: 18px;
-}
-
-section.card-menu div.starter__content a.card-menu__starter div.check__icon--check {
-  display: flex;
-  direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 72px;
-  left: 290px;
-  width: 60px;
-  height: 70px;
-  overflow: hidden;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #99E2D0;
-}
-
-section.card-menu div.starter__content a.card-menu__starter div.check__icon--check .fa-check-circle {
-  color: #99E2D0;
-  background-color: white;
-  border-radius: 50PX;
-  font-size: 35px;
-}
-
-section.card-menu div.card-menu__main h4.card-menu__title {
-  padding-bottom: 5px;
-  width: 10%;
-  color: black;
-  margin: 30px 0px 15px 0px;
-  border-bottom: 1px solid lightgrey;
-  border-width: 3px;
-  text-decoration: none;
-}
-
-section.card-menu div.main__content {
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 10px;
-  margin: 10px 0px 10px 0px;
-  padding-left: 10px;
-  height: 69px;
-}
-
-section.card-menu div.main__content a.card-menu__main {
-  text-decoration: none;
-  color: black;
-}
-
-section.card-menu div.main__content a.card-menu__main div.main__title {
-  padding: 15px 0px 3px 0px;
-}
-
-section.card-menu div.main__content a.card-menu__main div.main__price {
-  width: 20px;
-  position: relative;
-  left: 250px;
-  bottom: 20px;
-}
-
-section.card-menu div.main__content a.card-menu__main div.check__icon--check {
-  display: flex;
-  direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 72px;
-  left: 290px;
-  width: 60px;
-  height: 70px;
-  overflow: hidden;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #99E2D0;
-}
-
-section.card-menu div.main__content a.card-menu__main div.check__icon--check .fa-check-circle {
-  color: #99E2D0;
-  background-color: white;
-  border-radius: 50PX;
-  font-size: 35px;
-}
-
-section.card-menu div.card-menu__dessert {
-  text-decoration: none;
-  color: black;
-}
-
-section.card-menu div.card-menu__dessert h4.card-menu__title {
-  padding-bottom: 5px;
-  width: 10%;
-  color: black;
-  margin: 30px 0px 15px 0px;
-  border-bottom: 1px solid lightgrey;
-  border-width: 3px;
-  text-decoration: none;
-}
-
-section.card-menu div.dessert__content {
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 10px;
-  margin: 10px 0px 10px 0px;
-  padding-left: 10px;
-  height: 69px;
-}
-
-section.card-menu div.dessert__content a.card-menu__dessert {
-  text-decoration: none;
-  color: black;
-}
-
-section.card-menu div.dessert__content a.card-menu__dessert div.dessert__title {
-  padding: 15px 0px 3px 0px;
-}
-
-section.card-menu div.dessert__content a.card-menu__dessert div.dessert__price {
-  width: 20px;
-  position: relative;
-  left: 250px;
-  bottom: 20px;
-}
-
-section.card-menu div.dessert__content a.card-menu__dessert div.check__icon--check {
-  display: flex;
-  direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  bottom: 72px;
-  left: 290px;
-  width: 60px;
-  height: 70px;
-  overflow: hidden;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #99E2D0;
-}
-
-section.card-menu div.dessert__content a.card-menu__dessert div.check__icon--check .fa-check-circle {
-  color: #99E2D0;
-  background-color: white;
-  border-radius: 50PX;
-  font-size: 35px;
-}
-
-section.card-menu button.btn {
+button.btn {
   border: 1px solid #FF79DA;
   background-color: #FF79DA;
   color: white;
@@ -577,63 +405,70 @@ section.card-menu button.btn {
   width: 170px;
   height: 50px;
   position: relative;
-  top: 30px;
+  top: 20px;
   left: 90px;
+  font-size: 16px;
   cursor: pointer;
+  background: linear-gradient(#f27be0, #b374e0);
+  box-shadow: 4px 2px 4px 2px #f196e4;
 }
 
-section.card-menu button.btn:hover {
-  background-color: #e9dbfa;
+button.btn:hover {
+  background-color: #9356dc;
   color: white;
 }
 
-div.footpage1 {
-  display: flex;
-  flex-direction: column;
-  line-height: 20px;
-  background: grey;
-  padding-bottom: 30px;
+div.menu__content div.btn {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0px 0px 15px 0px;
+  padding-left: 10px;
+  height: 60px;
 }
 
-div.footpage1 a img.footerlogo {
-  width: 80px;
-  font-family: 'Shrikhand', cursive;
-  margin: 20px 0px 0px 10px;
-  filter: invert(100%);
-  -webkit-filter: white(100%);
-}
-
-div.footpage1 a i {
-  color: white;
-}
-
-div.footpage1 a.footup {
-  margin-left: 30px;
+div.menu__content div.btn a {
   text-decoration: none;
   color: black;
 }
 
-div.footpage1 a.footup .fa-staylinked {
+div.menu__content div.btn a p {
+  font-weight: 300;
+}
+
+div.menu__content div.btn a h4 {
+  padding-top: 10px;
+}
+
+div.menu__content div.btn a div.menu__price {
+  width: 20px;
   position: relative;
-  right: 175px;
-  top: 20px;
-  color: white;
+  left: 300px;
+  bottom: 18px;
 }
 
-div.footpage1 a.foot {
-  text-decoration: none;
-}
-
-div.footpage1 a.foot h3 {
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: 200;
-  color: white;
-}
-
-div.footpage1 .fa-utensils {
+div.menu__content div.btn div.check__icon--check {
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
   position: relative;
-  left: 10px;
-  top: 15px;
-  color: white;
+  bottom: 72px;
+  left: 290px;
+  width: 60px;
+  height: 70px;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99E2D0;
+}
+
+div.menu__content div.btn div.check__icon--check .fa-check-circle {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50PX;
+  font-size: 35px;
 }
