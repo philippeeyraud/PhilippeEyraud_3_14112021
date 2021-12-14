@@ -25,13 +25,15 @@ div.footpage a img.footerlogo {
   padding: 0px;
 }
 
-body {
-  background-color: white;
-  font-size: 16px;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  width: 100%;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform: translateX(-9999px);
+  }
+  to {
+    transform: rotate(360deg);
+    transform: translateX(0);
+  }
 }
 
 header {
@@ -408,9 +410,9 @@ button.btn {
   top: 20px;
   left: 90px;
   font-size: 16px;
-  cursor: pointer;
   background: linear-gradient(#f27be0, #b374e0);
   box-shadow: 4px 2px 4px 2px #f196e4;
+  cursor: pointer;
 }
 
 button.btn:hover {
@@ -418,36 +420,97 @@ button.btn:hover {
   color: white;
 }
 
-div.menu__content div.btn {
+div.menu__content {
+  overflow: hidden;
+}
+
+div.menu__content .item {
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
   margin: 0px 0px 15px 0px;
   padding-left: 10px;
   height: 60px;
+  cursor: pointer;
+  animation-timing-function: cubic-bezier(0.08, 0.82, 0.83, 0.67);
+  animation-duration: .6s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-name: itemdisplay;
+  max-width: 100%;
+  overflow: hidden;
+  animation-fill-mode: both;
 }
 
-div.menu__content div.btn a {
-  text-decoration: none;
-  color: black;
+@keyframes itemdisplay {
+  from {
+    transform: scale(0);
+    transform: translateX(-9999px);
+  }
+  to {
+    transform: scale(1);
+    transform: translateX(0);
+  }
 }
 
-div.menu__content div.btn a p {
+div.menu__content .d0 {
+  animation-delay: 0s;
+}
+
+div.menu__content .d1 {
+  animation-delay: .5s;
+}
+
+div.menu__content .d2 {
+  animation-delay: 1s;
+}
+
+div.menu__content .d3 {
+  animation-delay: 1.5s;
+}
+
+div.menu__content .d4 {
+  animation-delay: 2s;
+}
+
+div.menu__content .d5 {
+  animation-delay: 2.5s;
+}
+
+div.menu__content .d6 {
+  animation-delay: 3s;
+}
+
+div.menu__content .d7 {
+  animation-delay: 3.5s;
+}
+
+div.menu__content .d8 {
+  animation-delay: 4s;
+}
+
+.dish {
+  width: 320px;
+  overflow: hidden;
+}
+
+p {
   font-weight: 300;
 }
 
-div.menu__content div.btn a h4 {
+h4 {
   padding-top: 10px;
 }
 
-div.menu__content div.btn a div.menu__price {
+div.menu__price {
   width: 20px;
   position: relative;
   left: 300px;
   bottom: 18px;
 }
 
-div.menu__content div.btn div.check__icon--check {
+div.check__icon--check {
   display: flex;
   direction: column;
   flex-wrap: wrap;
@@ -466,7 +529,7 @@ div.menu__content div.btn div.check__icon--check {
   background-color: #99E2D0;
 }
 
-div.menu__content div.btn div.check__icon--check .fa-check-circle {
+div.check__icon--check .fa-check-circle {
   color: #99E2D0;
   background-color: white;
   border-radius: 50PX;

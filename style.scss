@@ -3,6 +3,7 @@ $green:#99E2D0;
 $textbtnbgfooter:white;
 $purple:#9356dc;
 $pink:#FF79DA;
+
 %heartmenu{ 
   position: absolute;
   right: 20px;
@@ -60,19 +61,19 @@ $pink:#FF79DA;
     margin:10px 0px 10px 0px;
     padding-left:10px;
     height: 69px;}
+%btn{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    margin:0px 0px 15px 0px;
+    padding-left:10px;
+    height:60px;}
 *{      
   margin: 0px;
   padding: 0px;
 }
 body {
-  background-color:rgb(255, 255, 255);
-  font-size: 16px;
-  box-sizing: border-box;
-  font-family:'Roboto', sans-serif;
-  font-size: 16px;
-  width: 100%;
-}
-  header{
+ header{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,10 +107,8 @@ body {
       background-color: rgb(234, 234, 235);
       height: 20px;
       font-size: 15px;
-      width: 140px;
-}
+      width: 140px;}
     }
-  
   section.discovery{
     background-color:rgb(246, 246, 246);
     padding-bottom: 40px;
@@ -322,21 +321,18 @@ body {
     a { 
       color:$textbtnbgfooter;
     }
-   
     .fa-staylinked{
       position: relative;
       left:15px;
       top: 25px;
       color: $textbtnbgfooter;
     }
-    
     p.weight{
       margin-bottom: 5px;
       font-size:16px;
       font-weight: 500; 
       margin-left: 40px; 
       line-height: 3px;
-    
     }
     p{
       font-size:16px;
@@ -344,7 +340,8 @@ body {
       color:$textbtnbgfooter;  
       margin-left: 15px; 
       margin-top: 15px;
-      line-height: 20px;}
+      line-height: 20px;
+    }
     .fa-utensils{
       position: relative;
       left: 15px;
@@ -366,9 +363,9 @@ body {
     padding-left: 20px;
   } 
   img.picture{
-  width: 100%;
-  position: relative;
-  z-index: -1;
+    width: 100%;
+    position: relative;
+    z-index: -1;
   }
   section.card-menu{
     padding: 10px 10px 60px 10px;
@@ -381,8 +378,8 @@ body {
       border-bottom : 1px solid lightgrey;
       border-width: 3px;
       text-decoration: none;
-      }
-    } 
+    }
+  } 
   div.menu{
     background-color: #f8f8f8;
     padding: 15px;
@@ -415,58 +412,126 @@ body {
     top: 20px;
     left: 90px;
     font-size: 16px;
-    cursor: pointer;
     background: linear-gradient(rgb(242, 123, 224), rgb(179,116,224));
     box-shadow: 4px 2px 4px 2px rgb(241, 150, 228);
+    cursor: pointer;
     &:hover {
       background-color: $purple;
-    color: white;
+        color: white;
     }
   }
-  div.menu__content{
-    div.btn{
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 10px;
-    margin:0px 0px 15px 0px;
-    padding-left:10px;
-    height:60px;
-    a{text-decoration: none;
-      color: black;
-      p{font-weight:300;
-      }
-      h4{padding-top: 10px;}
-      div.menu__price{ 
-        width: 20px;
-        position: relative;
-        left: 300px;
-        bottom: 18px;
-      }
-      }div.check__icon--check{
-        display: flex;
-        direction: column;
-        flex-wrap: wrap;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        visibility: hidden;
-        position: relative;
-        bottom: 72px;
-        left: 290px;
-        width: 60px;
-        height: 70px;
-        overflow: hidden;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        background-color: #99E2D0;
-        .fa-check-circle{
-          color:#99E2D0;
-          background-color: white;
-          border-radius: 50PX;
-          font-size: 35px; 
-        }
-    }
-  }
-}
 
+  div.menu__content{
+     overflow: hidden;
+    
+   
+    .item{
+      border: 1px solid white;
+      background-color: white;
+      border-radius: 10px;
+      margin:0px 0px 15px 0px;
+      padding-left:10px;
+      height:60px;
+      cursor: pointer;
+      animation-timing-function: cubic-bezier(.08,.82,.83,.67);
+      animation-duration:.6s ;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-play-state: running;
+      animation-name:itemdisplay;
+      max-width:100%;
+      overflow: hidden;
+      animation-fill-mode: both;
+    }
+    @keyframes itemdisplay {
+      from{
+        transform: scale(0);
+        transform: translateX(-9999px);
+      }
+      to{transform: scale(1);
+        transform: translateX(0);
+      }
+    }
+    .d0{
+      animation-delay:0s;
+     
+    
+    }
+    .d1{
+      animation-delay:.5s;
+     
+    }
+    .d2{
+      animation-delay:1s;
+      
+     
+    }
+    .d3{
+      animation-delay:1.5s;
+    }
+    .d4{
+      animation-delay:2s;
+    }
+    .d5{
+      animation-delay:2.5s;
+    }
+    .d6{
+      animation-delay:3s;
+    }
+    .d7{
+      animation-delay:3.5s;
+    }
+    .d8{
+      animation-delay:4s;
+    }
+  }
+      .dish{
+      width: 320px;
+      overflow: hidden;
+      }      
+        p{font-weight:300;
+        }
+        h4{padding-top: 10px;
+        }
+        div.menu__price{ 
+          width: 20px;
+          position: relative;
+          left: 300px;
+          bottom: 18px;
+        }
+    
+        div.check__icon--check{
+          display: flex;
+          direction: column;
+          flex-wrap: wrap;
+          align-content: space-around;
+          justify-content: center;
+          align-items: center;
+          visibility: hidden;
+          position: relative;
+          bottom: 72px;
+          left: 290px;
+          width: 60px;
+          height: 70px;
+          overflow: hidden;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background-color: #99E2D0;
+            .fa-check-circle{
+            color:#99E2D0;
+            background-color: white;
+            border-radius: 50PX;
+            font-size: 35px; 
+          }
+           
+
+        }
+
+
+
+       
+    
+    
   
+ 
+ 
