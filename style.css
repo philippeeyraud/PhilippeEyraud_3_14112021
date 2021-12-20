@@ -236,7 +236,7 @@ section.discovery div.discover button.btn {
   border-radius: 25px;
   height: 40px;
   font-size: 12px;
-  width: 160px;
+  width: 180px;
   border-color: transparent;
   background: linear-gradient(#f27be0, #b374e0);
   box-shadow: 1px 1px 1px 1px #f196e4;
@@ -555,6 +555,11 @@ div.menu__content {
 }
 
 div.menu__content .item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
@@ -575,10 +580,12 @@ div.menu__content .item {
 
 @keyframes itemdisplay {
   from {
-    transform: scale(0);
+    transform: translatey(50%);
+    opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: translate(0);
+    opacity: 1;
   }
 }
 
@@ -598,28 +605,8 @@ div.menu__content .d3 {
   animation-delay: 0.9s;
 }
 
-div.menu__content .d4 {
-  animation-delay: 1.1s;
-}
-
-div.menu__content .d5 {
-  animation-delay: 1.4s;
-}
-
-div.menu__content .d6 {
-  animation-delay: 1.7s;
-}
-
-div.menu__content .d7 {
-  animation-delay: 2s;
-}
-
-div.menu__content .d8 {
-  animation-delay: 2.3s;
-}
-
 .dish {
-  width: 320px;
+  width: 240px;
   overflow: hidden;
 }
 
@@ -632,32 +619,27 @@ h4 {
 }
 
 div.menu__price {
-  width: 20px;
-  position: relative;
-  left: 300px;
-  bottom: 18px;
+  width: 40px;
+  height: 62px;
+  display: flex;
+  align-items: center;
 }
 
 div.check__icon--check {
+  margin-right: -40px;
   display: flex;
-  direction: column;
-  flex-wrap: wrap;
   align-content: space-around;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  position: relative;
-  bottom: 72px;
-  left: 290px;
-  width: 60px;
-  height: 70px;
+  width: 50px;
+  height: 62px;
   overflow: hidden;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #99e2d0;
 }
 
-div.check__icon--check .fa-check-circle {
+.fa-check-circle {
   color: #99e2d0;
   background-color: white;
   border-radius: 50px;
