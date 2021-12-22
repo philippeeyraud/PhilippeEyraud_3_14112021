@@ -51,6 +51,37 @@ _form input.index {
   width: 140px;
 }
 
+@keyframes itemdisplay {
+  0% {
+    transform: translatey(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -550,21 +581,19 @@ button.btn:hover {
   color: white;
 }
 
-div.menu__content {
-  overflow: hidden;
-}
-
 div.menu__content .item {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-content: space-between;
   border: 1px solid white;
   background-color: white;
   border-radius: 10px;
   margin: 0px 0px 15px 0px;
-  padding-left: 10px;
+  padding-bottom: 0px;
+  padding-left: 5px;
   height: 60px;
   cursor: pointer;
   animation-timing-function: cubic-bezier(0.08, 0.82, 0.83, 0.67);
@@ -573,20 +602,39 @@ div.menu__content .item {
   animation-direction: normal;
   animation-play-state: running;
   animation-name: itemdisplay;
+  animation-delay: 0s;
   max-width: 100%;
   overflow: hidden;
   animation-fill-mode: both;
+  transform: scale(0);
 }
 
-@keyframes itemdisplay {
-  from {
-    transform: translatey(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
+div.menu__content .item div.check__icon--check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 58px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #99e2d0;
+  margin-right: -3rem;
+}
+
+div.menu__content .item:hover .check__icon--check {
+  margin-right: 0px;
+}
+
+div.menu__content .item:hover .check__icon--check i {
+  animation: rotate-icon 0.6s ease-in-out both;
+}
+
+div.menu__content .item:hover .check__icon--check .fa-check-circle {
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 35px;
+  animation: rotate-icon 0.6s ease-in-out both;
 }
 
 div.menu__content .d0 {
@@ -605,45 +653,17 @@ div.menu__content .d3 {
   animation-delay: 0.9s;
 }
 
-.dish {
-  width: 240px;
-  overflow: hidden;
-}
-
-p {
+div.menu__content p {
   font-weight: 300;
 }
 
-h4 {
+div.menu__content h4 {
   padding-top: 10px;
 }
 
-div.menu__price {
-  width: 40px;
-  height: 62px;
-  display: flex;
-  align-items: center;
-}
-
-div.check__icon--check {
-  margin-right: -40px;
-  display: flex;
-  align-content: space-around;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 62px;
-  overflow: hidden;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: #99e2d0;
-}
-
-.fa-check-circle {
-  color: #99e2d0;
-  background-color: white;
-  border-radius: 50px;
-  font-size: 35px;
+div.menu__content span.menu__price {
+  font-weight: 800;
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 1279px) {
