@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/%placeholders';
 @import './layout/form';
+
 @mixin margin{margin-right: -40px;}
 
 @keyframes itemdisplay {
@@ -13,25 +14,24 @@
   }
 }
 
-
-@keyframes slide-left {
-  0% {
-   
-            transform: translateX(-50px);
-  }
-  100% {
-   
-            transform: translateX(50px);
-  }
-}
 @keyframes rotate-icon {
   0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes slide-lefticon {
+  0% {
+    
+            transform: translateX(3rem);
+  }
+  100% {
+  
+            transform: translateX(0rem);
   }
 }
 * {
@@ -443,7 +443,7 @@ body{
   section.card-menu {
     padding: 10px 10px 60px 10px;
     background-color: rgb(246, 246, 246);
-    h4.card-menu__title {
+    h3.card-menu__title {
       padding-bottom: 5px;
       width: 10%;
       color: black;
@@ -494,7 +494,6 @@ body{
     }
   }
   div.menu__content {
-   
     .item{
       display: flex;
       flex-direction:row;
@@ -507,7 +506,7 @@ body{
       border-radius: 10px;
       margin:0px 0px 15px 0px;
       padding-bottom: 0px;
-      padding-left:5px;
+      padding-left:3px;
       height:60px;
       cursor: pointer;
       animation-timing-function: cubic-bezier(.08,.82,.83,.67);
@@ -531,13 +530,14 @@ body{
         border-bottom-right-radius: 10px;
         background-color: #99e2d0;
         margin-right:-3rem;
-      
-       
       }
       &:hover .check__icon--check{
         margin-right: 0px;
+        animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        transition: all 0.8s;
         i { 
-           animation: rotate-icon 0.6s ease-in-out both;
+          animation: rotate-icon 0.6s ease-in-out both;
+        
           }
           .fa-check-circle {
           color: #99e2d0;
@@ -545,7 +545,6 @@ body{
           border-radius: 50px;
           font-size: 35px;
           animation: rotate-icon 0.6s ease-in-out both;
-
         }
       }
     }
@@ -554,7 +553,7 @@ body{
       }
       .d1{ 
         animation-delay:0.3s;
-      
+        
       }
       .d2{ 
         animation-delay:0.6s;
@@ -563,16 +562,31 @@ body{
       .d3{
         animation-delay:0.9s;
       }
-      
-      p {
-      font-weight: 300;
+      div.describe{ 
+       
+        display: block;
+      }
+      p.describe{
+      font-weight: 300; 
+      white-space: nowrap; 
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-overflow: clip;
+      display: block;
+      margin: 0px;
       }
       h4 {
+        white-space: nowrap; 
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-overflow: clip;
+      display: block;
       padding-top: 10px;
       }
       span.menu__price{
       font-weight: 800;
       margin-left: auto;
+      padding-right: 10px;
       }
      
                 
