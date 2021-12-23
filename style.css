@@ -609,6 +609,32 @@ div.menu__content .item {
   transform: scale(0);
 }
 
+div.menu__content .item div.describe {
+  display: block;
+}
+
+div.menu__content .item div.describe p.describe {
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  margin: 0px;
+}
+
+div.menu__content .item div.describe h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+div.menu__content .item span.menu__price {
+  font-weight: 800;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
 div.menu__content .item div.check__icon--check {
   display: flex;
   align-items: center;
@@ -639,49 +665,20 @@ div.menu__content .item:hover .check__icon--check .fa-check-circle {
   animation: rotate-icon 0.6s ease-in-out both;
 }
 
-div.menu__content .d0 {
+div.menu__content .d-0 {
   animation-delay: 0s;
 }
 
-div.menu__content .d1 {
+div.menu__content .d-1 {
   animation-delay: 0.3s;
 }
 
-div.menu__content .d2 {
+div.menu__content .d-2 {
   animation-delay: 0.6s;
 }
 
-div.menu__content .d3 {
+div.menu__content .d-3 {
   animation-delay: 0.9s;
-}
-
-div.menu__content div.describe {
-  display: block;
-}
-
-div.menu__content p.describe {
-  font-weight: 300;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-overflow: clip;
-  display: block;
-  margin: 0px;
-}
-
-div.menu__content h4 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-overflow: clip;
-  display: block;
-  padding-top: 10px;
-}
-
-div.menu__content span.menu__price {
-  font-weight: 800;
-  margin-left: auto;
-  padding-right: 10px;
 }
 
 @media only screen and (min-width: 1279px) {
