@@ -646,9 +646,9 @@ div.menu__content .item span.menu__price {
   font-weight: 800;
   margin-left: auto;
   padding-right: 10px;
-  position: relative;
-  top: 15px;
   overflow: hidden;
+  position: relative;
+  top: 10px;
 }
 
 div.menu__content .item div.check__icon--check {
