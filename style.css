@@ -325,10 +325,10 @@ section.operation__contain button span.number {
   color: white;
   position: absolute;
   left: -10px;
-  top: 13px;
+  top: 17px;
   font-size: 16px;
   cursor: pointer;
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 section.operation__contain button svg .fa-mobile-alt {
@@ -406,16 +406,16 @@ section.dining__contain div.dining__picture a.dining img {
 
 section.dining__contain div.dining__content {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: flex-start;
   height: 60px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 0px 0px 10px 10px;
   height: 70px;
-  width: 92%;
+  width: 95%;
   padding-left: 0px;
   margin-left: 10px;
   padding: 10px 0px 0px 10px;
@@ -438,35 +438,51 @@ section.dining__contain div.dining__content a.content div.dining__title h3 {
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout {
-  top: 990px;
+  top: 980px;
+  position: absolute;
+  left: 328px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .svg-inline--fa {
   font-size: 25px;
+  position: absolute;
+  left: 0px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee {
-  top: 1250px;
+  top: 1240px;
+  position: absolute;
+  left: 328px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .svg-inline--fa {
   font-size: 25px;
+  position: absolute;
+  left: 0px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise {
-  top: 1520px;
+  top: 1500px;
+  position: absolute;
+  left: 328px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .svg-inline--fa {
   font-size: 25px;
+  position: absolute;
+  left: 0px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens {
-  top: 1785px;
+  top: 1760px;
+  position: absolute;
+  left: 328px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .svg-inline--fa {
   font-size: 25px;
+  position: absolute;
+  left: 0px;
 }
 
 div.footpage a {
@@ -662,6 +678,7 @@ div.menu__content .item div.check__icon--check {
   background-color: #99e2d0;
   margin-right: -3rem;
   flex-shrink: 0;
+  border-collapse: collapse;
 }
 
 div.menu__content .item:hover .check__icon--check {

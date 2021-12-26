@@ -262,10 +262,10 @@ body{
         color: $textbtnbgfooter;
         position: absolute;
         left: -10px;
-        top: 13px;
+        top: 17px;
         font-size: 16px;
         cursor: pointer;
-        padding-top: 6px;
+        padding-top: 3px;
       }
       svg .fa-mobile-alt {
         padding-left: 25px;
@@ -331,20 +331,21 @@ body{
     }
     div.dining__content {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction:row;
+      flex-wrap: nowrap;
+      justify-content:space-between;
       align-items: flex-start;
       height: 60px;
       margin-bottom: 20px;
       background-color: $textbtnbgfooter;
       border-radius: 0px 0px 10px 10px;
       height: 70px;
-      width: 92%;
+      width: 95%;
       padding-left: 0px;
       margin-left: 10px;
       padding: 10px 0px 0px 10px;
       font-size: 20px;
+      
       a.content {
         text-decoration: none;
         div.dining__title {
@@ -360,30 +361,47 @@ body{
         }
         div.heart__palettedugout {
           @extend %heartmenu;
-          top: 990px;
+          top: 980px;
+          position: absolute;
+          left: 328px;
           .svg-inline--fa {
             font-size: 25px;
+            position: absolute;
+            left: 0px;
+           
           }
         }
         div.heart__lanoteenchantee {
           @extend %heartmenu;
-          top: 1250px;
+          top: 1240px;
+          position: absolute;
+          left: 328px;
           .svg-inline--fa {
             font-size: 25px;
+            position: absolute;
+            left: 0px;
           }
         }
         div.heart__alafrancaise {
           @extend %heartmenu;
-          top: 1520px;
+          top: 1500px;
+          position: absolute;
+          left: 328px;
           .svg-inline--fa {
             font-size: 25px;
+            position: absolute;
+            left: 0px;
           }
         }
         div.heart__ledelicedessens {
           @extend %heartmenu;
-          top: 1785px;
+          top: 1760px;
+          position: absolute;
+          left: 328px;
           .svg-inline--fa {
             font-size: 25px;
+            position: absolute;
+            left: 0px;
           }
         }
       }
@@ -577,6 +595,7 @@ body{
         background-color: #99e2d0;
         margin-right:-3rem;
         flex-shrink: 0;
+        border-collapse: collapse;
       }
       &:hover .check__icon--check{
         margin-right: 0px;
