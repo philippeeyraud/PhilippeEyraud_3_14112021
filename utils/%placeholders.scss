@@ -1,0 +1,59 @@
+
+%heartmenu{ 
+   
+    background-color: transparent;
+
+}
+%footpage{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    background: lighten(black,25);
+    padding-bottom: 30px;}
+%imgfooter{
+    width:80px;
+    font-family: 'Shrikhand', cursive;
+    margin:20px 0px 0px 10px;
+    filter: invert(100%);
+    -webkit-filter: white(100%);}
+%fa-check-circle{ 
+    color:$green;
+    background-color:$textbtnbgfooter;
+    border-radius: 50PX;
+    font-size: 35px;}
+%pricemenu{
+    width: 20px;
+    position: relative;
+    left: 250px;
+    bottom: 20px;}
+%titlemenu{
+    padding-bottom:5px;
+    width: 10%;
+    color: black;
+    margin: 30px 0px 15px 0px;
+    border-bottom : 1px solid lightgrey;
+    border-width: 3px;
+    text-decoration: none;}
+%iconmenu{
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 72px;
+    left: 290px;
+    width: 60px;
+    height: 70px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $green;}
+%contentmenu{ 
+    border: 1px solid $textbtnbgfooter;
+    background-color: $textbtnbgfooter;
+    border-radius: 10px;
+    margin:10px 0px 10px 0px;
+    padding-left:10px;
+    height: 69px;}

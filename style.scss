@@ -267,15 +267,20 @@ body{
         cursor: pointer;
         padding-top: 3px;
       }
-      svg .fa-mobile-alt {
+      .fa-mobile-alt {
+        position: absolute;
+        left: 10px;
         padding-left: 25px;
       }
-      .svg-inline--fa {
-        position: relative;
-        right: 35px;
+      .fa-list {
+        position: absolute;
+        left: 30px;
         margin-right: 10px;
       }
       .fa-store {
+        position: absolute;
+        left: 26px;
+        color: #FF79DA;
         color: $purple;
       }
     }
@@ -359,53 +364,62 @@ body{
             font-weight: 300;
           }
         }
-        div.heart__palettedugout {
-          @extend %heartmenu;
-          top: 980px;
-          position: absolute;
-          left: 328px;
-          .svg-inline--fa {
-            font-size: 25px;
+          div.heart__palettedugout{
+          .fas {
             position: absolute;
-            left: 0px;
-           
+            font-size: 30px;
+            top: 970px;
+            right: 20px;
+            color: transparent;
+            animation-iteration-count:1;
+            animation-name: color-change-2x;
+            &:hover{
+              animation: color-change-2x 1s linear alternate both;
+            } 
           }
-        }
-        div.heart__lanoteenchantee {
-          @extend %heartmenu;
-          top: 1240px;
-          position: absolute;
-          left: 328px;
-          .svg-inline--fa {
-            font-size: 25px;
+            @keyframes color-change-2x {
+              0% {
+              color:rgb(242, 123, 224);
+              }
+              
+              100% {
+              color:rgb(179, 116, 224);
+              }
+            }
+          
+        .far{
             position: absolute;
-            left: 0px;
+            font-size: 30px;
+            top: 970px;
+            right: 20px;
+            animation-iteration-count:1;
+            background-clip: content-box;
+            &:hover{
+              animation: color-change-2x 1s linear alternate both;
+            }  
           }
-        }
-        div.heart__alafrancaise {
-          @extend %heartmenu;
-          top: 1500px;
-          position: absolute;
-          left: 328px;
-          .svg-inline--fa {
-            font-size: 25px;
-            position: absolute;
-            left: 0px;
-          }
-        }
-        div.heart__ledelicedessens {
-          @extend %heartmenu;
-          top: 1760px;
-          position: absolute;
-          left: 328px;
-          .svg-inline--fa {
-            font-size: 25px;
-            position: absolute;
-            left: 0px;
-          }
-        }
+            @keyframes color-change-2x {
+              0% {
+                color: black;
+              }
+              100% {
+              color: transparent;
+              }
+            }
+        } 
       }
     }
+
+
+
+
+
+        
+       
+         
+         
+       
+    
   }
   div.footpage {
     @extend %footpage;
@@ -631,32 +645,3 @@ body{
       margin-left: 450px;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-    
-   
-  
-    
-   
- 
-    
- 
-
-   
-  
-
-
-
-
-
-
-

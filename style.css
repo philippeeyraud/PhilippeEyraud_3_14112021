@@ -1,9 +1,3 @@
-section.dining__contain div.dining__content a.content div.heart__ledelicedessens, section.dining__contain div.dining__content a.content div.heart__alafrancaise, section.dining__contain div.dining__content a.content div.heart__lanoteenchantee, section.dining__contain div.dining__content a.content div.heart__palettedugout {
-  position: absolute;
-  right: 20px;
-  color: black;
-}
-
 div.footpage {
   display: flex;
   flex-direction: column;
@@ -331,17 +325,22 @@ section.operation__contain button span.number {
   padding-top: 3px;
 }
 
-section.operation__contain button svg .fa-mobile-alt {
+section.operation__contain button .fa-mobile-alt {
+  position: absolute;
+  left: 10px;
   padding-left: 25px;
 }
 
-section.operation__contain button .svg-inline--fa {
-  position: relative;
-  right: 35px;
+section.operation__contain button .fa-list {
+  position: absolute;
+  left: 30px;
   margin-right: 10px;
 }
 
 section.operation__contain button .fa-store {
+  position: absolute;
+  left: 26px;
+  color: #FF79DA;
   color: #FF79DA;
 }
 
@@ -437,52 +436,49 @@ section.dining__contain div.dining__content a.content div.dining__title h3 {
   font-weight: 300;
 }
 
-section.dining__contain div.dining__content a.content div.heart__palettedugout {
-  top: 980px;
+section.dining__contain div.dining__content a.content div.heart__palettedugout .fas {
   position: absolute;
-  left: 328px;
+  font-size: 30px;
+  top: 970px;
+  right: 20px;
+  color: transparent;
+  animation-iteration-count: 1;
+  animation-name: color-change-2x;
 }
 
-section.dining__contain div.dining__content a.content div.heart__palettedugout .svg-inline--fa {
-  font-size: 25px;
-  position: absolute;
-  left: 0px;
+section.dining__contain div.dining__content a.content div.heart__palettedugout .fas:hover {
+  animation: color-change-2x 1s linear alternate both;
 }
 
-section.dining__contain div.dining__content a.content div.heart__lanoteenchantee {
-  top: 1240px;
-  position: absolute;
-  left: 328px;
+@keyframes color-change-2x {
+  0% {
+    color: #f27be0;
+  }
+  100% {
+    color: #b374e0;
+  }
 }
 
-section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .svg-inline--fa {
-  font-size: 25px;
+section.dining__contain div.dining__content a.content div.heart__palettedugout .far {
   position: absolute;
-  left: 0px;
+  font-size: 30px;
+  top: 970px;
+  right: 20px;
+  animation-iteration-count: 1;
+  background-clip: content-box;
 }
 
-section.dining__contain div.dining__content a.content div.heart__alafrancaise {
-  top: 1500px;
-  position: absolute;
-  left: 328px;
+section.dining__contain div.dining__content a.content div.heart__palettedugout .far:hover {
+  animation: color-change-2x 1s linear alternate both;
 }
 
-section.dining__contain div.dining__content a.content div.heart__alafrancaise .svg-inline--fa {
-  font-size: 25px;
-  position: absolute;
-  left: 0px;
-}
-
-section.dining__contain div.dining__content a.content div.heart__ledelicedessens {
-  top: 1760px;
-  position: absolute;
-  left: 328px;
-}
-
-section.dining__contain div.dining__content a.content div.heart__ledelicedessens .svg-inline--fa {
-  font-size: 25px;
-  position: absolute;
-  left: 0px;
+@keyframes color-change-2x {
+  0% {
+    color: black;
+  }
+  100% {
+    color: transparent;
+  }
 }
 
 div.footpage a {
