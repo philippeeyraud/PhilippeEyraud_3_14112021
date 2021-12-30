@@ -365,62 +365,113 @@ body{
           }
         }
           div.heart__palettedugout{
-          .fas {
-            position: absolute;
-            font-size: 30px;
-            top: 970px;
-            right: 20px;
-            color: transparent;
-            animation-iteration-count:1;
-            animation-name: color-change-2x;
-            &:hover{
-              animation: color-change-2x 1s linear alternate both;
-            } 
-          }
-            @keyframes color-change-2x {
-              0% {
-              color:rgb(242, 123, 224);
-              }
-              
-              100% {
-              color:rgb(179, 116, 224);
-              }
-            }
-          
-        .far{
-            position: absolute;
-            font-size: 30px;
-            top: 970px;
-            right: 20px;
-            animation-iteration-count:1;
-            background-clip: content-box;
-            &:hover{
-              animation: color-change-2x 1s linear alternate both;
-            }  
-          }
-            @keyframes color-change-2x {
-              0% {
-                color: black;
-              }
-              100% {
+            i{transform: translateY(-50%);} 
+            .fas {
+              position: absolute;
+              font-size: 30px;
+              top: 980px;
+              right: 20px;
               color: transparent;
-              }
+              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+              background-clip: text;
+              -webkit-background-clip: text;
+              opacity:0;
+              transition: all;
+              &:hover.fas{ opacity:1;
+                transform: scale(1) translateY(-50%);}
             }
-        } 
-      }
-    }
-
-
-
-
-
+            .far{
+              color: black;
+              position: absolute;
+              font-size: 30px;
+              top: 980px;
+              right: 20px;
+              &:hover{visibility: hidden}
+              }
         
-       
-         
-         
-       
-    
-  }
+            
+          }
+          
+          div.heart__lanoteenchantee{
+            i{transform: translateY(-50%);} 
+            .fas {
+              position: absolute;
+              font-size: 30px;
+              top:1240px;
+              right: 20px;
+              color: transparent;
+              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+              background-clip: text;
+              -webkit-background-clip: text;
+              opacity:0;
+              transition: all;
+              &:hover.fas{ opacity:1;
+                transform: scale(1) translateY(-50%);}
+            }
+            .far{
+              color: black;
+              position: absolute;
+              font-size: 30px;
+              top: 1240px;
+              right: 20px;
+              &:hover{visibility: hidden}
+            }
+          }
+          div.heart__alafrancaise{
+            i{transform: translateY(-50%);} 
+            .fas {
+              position: absolute;
+              font-size: 30px;
+              top: 1498px;
+              right: 20px;
+              color: transparent;
+              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+              background-clip: text;
+              -webkit-background-clip: text;
+              opacity:0;
+              transition: all;
+              &:hover.fas{ opacity:1;
+                transform: scale(1) translateY(-50%);}
+            }
+            .far{
+              color: black;
+              position: absolute;
+              font-size: 30px;
+              top: 1498px;
+              right: 20px;
+            &:hover{visibility: hidden}
+           }
+        }   
+          div.heart__ledelicedessens{
+            i{transform: translateY(-50%);} 
+            .fas {
+              position: absolute;
+              font-size: 30px;
+              top: 1759px;
+              right: 20px;
+              color: transparent;
+              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+              background-clip: text;
+              -webkit-background-clip: text;
+              opacity:0;
+              transition: all;
+              &:hover.fas{ opacity:1;
+                transform: scale(1) translateY(-50%);}
+            }
+            .far{
+              color: black;
+              position: absolute;
+              font-size: 30px;
+              top: 1759px;
+              right: 20px;
+            &:hover{visibility: hidden}
+              }
+        
+            }
+          }   
+      
+      }  
+    }
   div.footpage {
     @extend %footpage;
     a img.footerlogo {
@@ -503,9 +554,6 @@ body{
       font-size: 25px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-   
-      
-      
     }
   }
   div.card__heart {
@@ -513,8 +561,36 @@ body{
     right: 45px;
     top: 365px;
     font-size: 25px;
+  
+    i{
+      transform: translateY(-50%);
+    } 
+    .fas {
+      position: absolute;
+      font-size: 30px;
+      top: 15px;
+      color: transparent;
+      background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity:0;
+      transition: all;
+      &:hover.fas{
+         opacity:1;
+        transform: scale(1) translateY(-50%) ;}
+     
+    }
+    .far{
+      position: absolute;
+      font-size: 30px;
+      top: 15px;
+      color: black;
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition: all;
+      &:hover{visibility: hidden}
   }
-
+  }
   button.btn {
     border: 1px solid #ff79da;
     background-color: #ff79da;

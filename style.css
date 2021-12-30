@@ -436,49 +436,140 @@ section.dining__contain div.dining__content a.content div.dining__title h3 {
   font-weight: 300;
 }
 
+section.dining__contain div.dining__content a.content div.heart__palettedugout i {
+  transform: translateY(-50%);
+}
+
 section.dining__contain div.dining__content a.content div.heart__palettedugout .fas {
   position: absolute;
   font-size: 30px;
-  top: 970px;
+  top: 980px;
   right: 20px;
   color: transparent;
-  animation-iteration-count: 1;
-  animation-name: color-change-2x;
+  background-image: linear-gradient(#f27be0, #b374e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all;
 }
 
-section.dining__contain div.dining__content a.content div.heart__palettedugout .fas:hover {
-  animation: color-change-2x 1s linear alternate both;
-}
-
-@keyframes color-change-2x {
-  0% {
-    color: #f27be0;
-  }
-  100% {
-    color: #b374e0;
-  }
+section.dining__contain div.dining__content a.content div.heart__palettedugout .fas:hover.fas {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .far {
+  color: black;
   position: absolute;
   font-size: 30px;
-  top: 970px;
+  top: 980px;
   right: 20px;
-  animation-iteration-count: 1;
-  background-clip: content-box;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .far:hover {
-  animation: color-change-2x 1s linear alternate both;
+  visibility: hidden;
 }
 
-@keyframes color-change-2x {
-  0% {
-    color: black;
-  }
-  100% {
-    color: transparent;
-  }
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee i {
+  transform: translateY(-50%);
+}
+
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .fas {
+  position: absolute;
+  font-size: 30px;
+  top: 1240px;
+  right: 20px;
+  color: transparent;
+  background-image: linear-gradient(#f27be0, #b374e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all;
+}
+
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .fas:hover.fas {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
+}
+
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .far {
+  color: black;
+  position: absolute;
+  font-size: 30px;
+  top: 1240px;
+  right: 20px;
+}
+
+section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .far:hover {
+  visibility: hidden;
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise i {
+  transform: translateY(-50%);
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise .fas {
+  position: absolute;
+  font-size: 30px;
+  top: 1498px;
+  right: 20px;
+  color: transparent;
+  background-image: linear-gradient(#f27be0, #b374e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all;
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise .fas:hover.fas {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise .far {
+  color: black;
+  position: absolute;
+  font-size: 30px;
+  top: 1498px;
+  right: 20px;
+}
+
+section.dining__contain div.dining__content a.content div.heart__alafrancaise .far:hover {
+  visibility: hidden;
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens i {
+  transform: translateY(-50%);
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens .fas {
+  position: absolute;
+  font-size: 30px;
+  top: 1759px;
+  right: 20px;
+  color: transparent;
+  background-image: linear-gradient(#f27be0, #b374e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all;
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens .fas:hover.fas {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens .far {
+  color: black;
+  position: absolute;
+  font-size: 30px;
+  top: 1759px;
+  right: 20px;
+}
+
+section.dining__contain div.dining__content a.content div.heart__ledelicedessens .far:hover {
+  visibility: hidden;
 }
 
 div.footpage a {
@@ -571,6 +662,41 @@ div.card__heart {
   right: 45px;
   top: 365px;
   font-size: 25px;
+}
+
+div.card__heart i {
+  transform: translateY(-50%);
+}
+
+div.card__heart .fas {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  color: transparent;
+  background-image: linear-gradient(#f27be0, #b374e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all;
+}
+
+div.card__heart .fas:hover.fas {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
+}
+
+div.card__heart .far {
+  position: absolute;
+  font-size: 30px;
+  top: 15px;
+  color: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all;
+}
+
+div.card__heart .far:hover {
+  visibility: hidden;
 }
 
 button.btn {
