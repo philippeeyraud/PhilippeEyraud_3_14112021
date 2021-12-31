@@ -442,9 +442,9 @@ section.dining__contain div.dining__content a.content div.heart__palettedugout i
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .fas {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 980px;
-  right: 20px;
+  right: 40px;
   color: transparent;
   background-image: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
@@ -456,14 +456,15 @@ section.dining__contain div.dining__content a.content div.heart__palettedugout .
 section.dining__contain div.dining__content a.content div.heart__palettedugout .fas:hover.fas {
   opacity: 1;
   transform: scale(1) translateY(-50%);
+  transition-duration: 1s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .far {
   color: black;
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 980px;
-  right: 20px;
+  right: 40px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .far:hover {
@@ -476,9 +477,9 @@ section.dining__contain div.dining__content a.content div.heart__lanoteenchantee
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .fas {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 1240px;
-  right: 20px;
+  right: 40px;
   color: transparent;
   background-image: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
@@ -490,14 +491,15 @@ section.dining__contain div.dining__content a.content div.heart__lanoteenchantee
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .fas:hover.fas {
   opacity: 1;
   transform: scale(1) translateY(-50%);
+  transition-duration: 1s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .far {
   color: black;
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 1240px;
-  right: 20px;
+  right: 40px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .far:hover {
@@ -510,28 +512,30 @@ section.dining__contain div.dining__content a.content div.heart__alafrancaise i 
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .fas {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 1498px;
-  right: 20px;
+  right: 40px;
   color: transparent;
   background-image: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all;
+  transition-duration: 1.5s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .fas:hover.fas {
   opacity: 1;
   transform: scale(1) translateY(-50%);
+  transition-duration: 1s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .far {
   color: black;
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 1498px;
-  right: 20px;
+  right: 40px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .far:hover {
@@ -544,9 +548,9 @@ section.dining__contain div.dining__content a.content div.heart__ledelicedessens
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .fas {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 1759px;
-  right: 20px;
+  right: 40px;
   color: transparent;
   background-image: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
@@ -557,15 +561,16 @@ section.dining__contain div.dining__content a.content div.heart__ledelicedessens
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .fas:hover.fas {
   opacity: 1;
-  transform: scale(1) translateY(-50%);
+  transform: scale(1.1) translateY(-50%);
+  transition-duration: 1s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .far {
   color: black;
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 1759px;
-  right: 20px;
+  right: 40px;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .far:hover {
@@ -775,7 +780,6 @@ div.menu__content .item div.describe p.describe-text {
 
 div.menu__content .item div.describe h4 {
   white-space: nowrap;
-  white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -839,6 +843,19 @@ div.menu__content .d-3 {
 
 @media only screen and (min-width: 1279px) {
   form {
-    margin-left: 450px;
+    margin-left: 2px;
+    display: flex;
+    width: 1280px;
+    height: 65px;
+  }
+  form input.index {
+    font-size: 20px;
+  }
+  form button.map i.fas {
+    font-size: 20px;
+  }
+  div.discover {
+    height: 300px;
+    font-size: 25px;
   }
 }

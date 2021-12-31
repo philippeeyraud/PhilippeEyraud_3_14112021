@@ -368,24 +368,28 @@ body{
             i{transform: translateY(-50%);} 
             .fas {
               position: absolute;
-              font-size: 30px;
+              font-size: 25px;
               top: 980px;
-              right: 20px;
+              right: 40px;
               color: transparent;
               background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
               background-clip: text;
               -webkit-background-clip: text;
               opacity:0;
               transition: all;
+         
+             
               &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);}
+                transform: scale(1) translateY(-50%);
+                transition-duration: 1s;
+                }
             }
             .far{
               color: black;
               position: absolute;
-              font-size: 30px;
+              font-size:25px;
               top: 980px;
-              right: 20px;
+              right: 40px;
               &:hover{visibility: hidden}
               }
         
@@ -396,24 +400,26 @@ body{
             i{transform: translateY(-50%);} 
             .fas {
               position: absolute;
-              font-size: 30px;
+              font-size: 25px;
               top:1240px;
-              right: 20px;
+              right: 40px;
               color: transparent;
               background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
               background-clip: text;
               -webkit-background-clip: text;
               opacity:0;
               transition: all;
+
               &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);}
+                transform: scale(1) translateY(-50%);
+                transition-duration: 1s;}
             }
             .far{
               color: black;
               position: absolute;
-              font-size: 30px;
+              font-size: 25px;
               top: 1240px;
-              right: 20px;
+              right: 40px;
               &:hover{visibility: hidden}
             }
           }
@@ -421,34 +427,37 @@ body{
             i{transform: translateY(-50%);} 
             .fas {
               position: absolute;
-              font-size: 30px;
+              font-size:25px;
               top: 1498px;
-              right: 20px;
+              right: 40px;
               color: transparent;
               background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
               background-clip: text;
               -webkit-background-clip: text;
               opacity:0;
               transition: all;
+              transition-duration: 1.5s;
               &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);}
+                transform: scale(1) translateY(-50%);
+                transition-duration: 1s;}
             }
             .far{
               color: black;
               position: absolute;
-              font-size: 30px;
+              font-size: 25px;
               top: 1498px;
-              right: 20px;
-            &:hover{visibility: hidden}
+              right: 40px;
+            &:hover{visibility: hidden;
+             }
            }
         }   
           div.heart__ledelicedessens{
             i{transform: translateY(-50%);} 
             .fas {
               position: absolute;
-              font-size: 30px;
+              font-size:25px;
               top: 1759px;
-              right: 20px;
+              right: 40px;
               color: transparent;
               background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
               background-clip: text;
@@ -456,14 +465,15 @@ body{
               opacity:0;
               transition: all;
               &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);}
+                transform: scale(1.1) translateY(-50%);
+                transition-duration: 1s;}
             }
             .far{
               color: black;
               position: absolute;
-              font-size: 30px;
+              font-size: 25px;
               top: 1759px;
-              right: 20px;
+              right: 40px;
             &:hover{visibility: hidden}
               }
         
@@ -658,7 +668,6 @@ body{
         }
         h4 {
         white-space: nowrap; 
-        white-space: nowrap; 
         text-overflow: ellipsis;
         overflow: hidden;
         }
@@ -718,6 +727,25 @@ body{
   
   @media only screen and (min-width:1279px){
     form{
-      margin-left: 450px;
+      margin-left: 2px;
+      display:flex;
+      width: 1280px;
+      height: 65px;
+    
+    input.index{font-size: 20px;
+    }
+    button.map i.fas{font-size: 20px;
     }
   }
+   div.discover{height: 300px;
+    font-size: 25px;
+    h1{
+    
+    }
+  }
+    
+   
+ 
+   }
+
+  
