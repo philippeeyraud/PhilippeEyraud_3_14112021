@@ -209,7 +209,7 @@ form {
   background-color: #eaeaeb;
   width: 375px;
   justify-content: center;
-  box-shadow: 3px 1px 3px 1px #d9d9d9;
+  box-shadow: -0px -2px 0px lightgrey;
   border: 1px solid #e6e6e6;
   height: 40px;
   column-gap: 0px;
@@ -675,7 +675,7 @@ div.card__heart i {
 
 div.card__heart .fas {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 15px;
   color: transparent;
   background-image: linear-gradient(#f27be0, #b374e0);
@@ -688,11 +688,12 @@ div.card__heart .fas {
 div.card__heart .fas:hover.fas {
   opacity: 1;
   transform: scale(1) translateY(-50%);
+  transition-duration: 1.5s;
 }
 
 div.card__heart .far {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   top: 15px;
   color: black;
   -webkit-background-clip: text;
@@ -841,7 +842,7 @@ div.menu__content .d-3 {
   animation-delay: 0.9s;
 }
 
-@media only screen and (min-width: 1279px) {
+@media only screen and (min-width: 1280px) {
   form {
     margin-left: 2px;
     display: flex;
@@ -854,8 +855,62 @@ div.menu__content .d-3 {
   form button.map i.fas {
     font-size: 20px;
   }
-  div.discover {
-    height: 300px;
-    font-size: 25px;
+  section.operation__contain {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 60px;
+    column-gap: 20px;
+  }
+  section.operation__contain h2.operation__title {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    padding-top: 15px;
+  }
+  section.dining__contain {
+    display: block;
+    padding-right: 20px;
+  }
+  section.dining__contain div.dining__picture {
+    width: 100%;
+  }
+  section.dining__contain div.dining__picture a.dining img {
+    width: 100%;
+  }
+  section.dining__contain div.dining__content {
+    width: 100%;
+  }
+  section.dining__contain div.heart__palettedugout {
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: -160px;
+  }
+  section.dining__contain div.heart__lanoteenchantee {
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: -160px;
+  }
+  section.dining__contain div.heart__alafrancaise {
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: -160px;
+  }
+  section.dining__contain div.heart__ledelicedessens {
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: -160px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footpage {
+    width: 100%;
+    padding-left: 500px;
   }
 }

@@ -153,6 +153,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     img.logo {
       width: 200px;
       font-family: 'Shrikhand', cursive;
@@ -164,7 +165,7 @@ body{
     background-color: rgb(234, 234, 235);
     width: 375px;
     justify-content: center;
-    box-shadow: 3px 1px 3px 1px lighten($grey, 35);
+    box-shadow: -0px -2px 0px lightgrey;
     border: 1px solid lighten($grey, 40);
     height: 40px;
     column-gap: 0px;
@@ -577,7 +578,7 @@ body{
     } 
     .fas {
       position: absolute;
-      font-size: 30px;
+      font-size: 25px;
       top: 15px;
       color: transparent;
       background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
@@ -587,12 +588,13 @@ body{
       transition: all;
       &:hover.fas{
          opacity:1;
-        transform: scale(1) translateY(-50%) ;}
+        transform: scale(1) translateY(-50%) ;
+      transition-duration: 1.5s;}
      
     }
     .far{
       position: absolute;
-      font-size: 30px;
+      font-size: 25px;
       top: 15px;
       color: black;
       -webkit-background-clip: text;
@@ -720,32 +722,105 @@ body{
           animation-delay:($d0 * 0.3s);}
         }          
   }     
- 
-  
-  
-  
-  
-  @media only screen and (min-width:1279px){
+  @media only screen and (min-width:1280px){
     form{
       margin-left: 2px;
       display:flex;
-      width: 1280px;
+      width: 770px;
       height: 65px;
     
-    input.index{font-size: 20px;
-    }
-    button.map i.fas{font-size: 20px;
+  
+  
+  
+  
+  @media only screen and (min-width:1280px){
+  form{
+    margin-left: 2px;
+    display:flex;
+    width: 1280px;
+    height: 65px;
+  
+    input.index{font-size: 20px;}
+    button.map i.fas{font-size: 20px;}
+  
+  }
+  section.operation__contain {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding:60px ;
+      column-gap: 20px;
+    h2.operation__title{
+      position: absolute;
+      top: 300px;
+      left: 0px;
+      padding-top:15px ;
     }
   }
-   div.discover{height: 300px;
-    font-size: 25px;
-    h1{
+  section.dining__contain{
+   display: block;
+   padding-right: 20px;
+    div.dining__picture{width: 100%;
+      a.dining img{width: 100%;}
+      
+    }
+    div.dining__content{
+      width: 100%;
+    }
+      div.heart__palettedugout{height: 50px;
+        position: absolute;
+        right: 0px;
+        top:-160px;
+      }
+      div.heart__lanoteenchantee{height: 50px;
+        position: absolute;
+        right: 0px;
+        top:-160px;
+      }
+      div.heart__alafrancaise{height: 50px;
+        position: absolute;
+        right: 0px;
+        top:-160px;
+      }
+      div.heart__ledelicedessens{height: 50px;
+        position: absolute;
+        right: 0px;
+        top:-160px;
+
+      }
+  }
+  footer{display: flex;
+  justify-content: center;
+    .footpage{width:100%;
+    padding-left:500px;
+  
+}
+
+}
+
+
+
+
+} 
+
+ 
+
+  
+  
+  
+
+
+
+
+
     
-    }
-  }
+ 
+    
+  
+  
     
    
  
-   }
+   
 
   
