@@ -147,7 +147,7 @@ body{
       animation-delay: 1s;
       ;
     }
-/*-----*/
+
 
   header {
     display: flex;
@@ -163,7 +163,7 @@ body{
   form {
     display: flex;
     background-color: rgb(234, 234, 235);
-    width: 375px;
+    width:100%;
     justify-content: center;
     box-shadow: -0px -2px 0px lightgrey;
     border: 1px solid lighten($grey, 40);
@@ -722,26 +722,30 @@ body{
           animation-delay:($d0 * 0.3s);}
         }          
   }     
-  @media only screen and (min-width:1280px){
+  @media only screen and (min-width:768px){
     form{
       margin-left: 2px;
-      display:flex;
-      width: 770px;
+      width: 100%;
       height: 65px;
-    
-  
-  
-  
+    }
+    section.operation__contain{
+      margin-left: 30px;
+    }
+    section.dining__contain{  padding-left: 20px;
+    }
+  }
   
   @media only screen and (min-width:1280px){
   form{
     margin-left: 2px;
     display:flex;
-    width: 1280px;
+    width:100%;
     height: 65px;
   
-    input.index{font-size: 20px;}
-    button.map i.fas{font-size: 20px;}
+    input.index{font-size: 20px;
+    }
+    button.map i.fas{font-size: 20px;
+    }
   
   }
   section.operation__contain {
@@ -749,7 +753,8 @@ body{
     flex-wrap: nowrap;
     flex-direction: row;
     padding:60px ;
-      column-gap: 20px;
+    margin-left: -25px;
+    column-gap: 20px;
     h2.operation__title{
       position: absolute;
       top: 300px;
@@ -758,50 +763,59 @@ body{
     }
   }
   section.dining__contain{
-   display: block;
-   padding-right: 20px;
+    display: block;
+    padding-right: 20px;
+    padding-left: 65px;
     div.dining__picture{width: 100%;
-      a.dining img{width: 100%;}
-      
-    }
-    div.dining__content{
-      width: 100%;
-    }
-      div.heart__palettedugout{height: 50px;
-        position: absolute;
-        right: 0px;
-        top:-160px;
+      a.dining img{
+        width: 95%;
       }
-      div.heart__lanoteenchantee{height: 50px;
-        position: absolute;
-        right: 0px;
-        top:-160px;
-      }
-      div.heart__alafrancaise{height: 50px;
-        position: absolute;
-        right: 0px;
-        top:-160px;
-      }
-      div.heart__ledelicedessens{height: 50px;
-        position: absolute;
-        right: 0px;
-        top:-160px;
-
-      }
+    }  
   }
-  footer{display: flex;
-  justify-content: center;
-    .footpage{width:100%;
-    padding-left:500px;
+    div.dining__content{max-width: 100%;
+    
+    }
+      div.heart__palettedugout{
+        height: 50px;
+        position: absolute;
+        right: 40px;
+        top:-160px;
+      }
+      div.heart__lanoteenchantee{
+        height: 50px;
+        position: absolute;
+        right: 40px;
+        top:-160px;
+      }
+      div.heart__alafrancaise{
+        height: 50px;
+        position: absolute;
+        right: 40px;
+        top:-160px;
+      }
+      div.heart__ledelicedessens{
+        height: 50px;
+        position: absolute;
+        right:40px;
+        top:-160px;
+
+      }
   
-}
+    footer{
+      display: flex;
+      justify-content: center;
+      .footpage{
+        width:100%;
+        padding-left:500px;
+    
+      }
 
-}
+    }
 
 
 
 
-} 
+  } 
 
  
 

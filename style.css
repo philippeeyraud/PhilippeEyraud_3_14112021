@@ -191,7 +191,6 @@ body {
   animation-delay: 1s;
 }
 
-/*-----*/
 header {
   display: flex;
   flex-direction: column;
@@ -207,7 +206,7 @@ header img.logo {
 form {
   display: flex;
   background-color: #eaeaeb;
-  width: 375px;
+  width: 100%;
   justify-content: center;
   box-shadow: -0px -2px 0px lightgrey;
   border: 1px solid #e6e6e6;
@@ -842,11 +841,25 @@ div.menu__content .d-3 {
   animation-delay: 0.9s;
 }
 
+@media only screen and (min-width: 768px) {
+  form {
+    margin-left: 2px;
+    width: 100%;
+    height: 65px;
+  }
+  section.operation__contain {
+    margin-left: 30px;
+  }
+  section.dining__contain {
+    padding-left: 20px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   form {
     margin-left: 2px;
     display: flex;
-    width: 1280px;
+    width: 100%;
     height: 65px;
   }
   form input.index {
@@ -860,6 +873,7 @@ div.menu__content .d-3 {
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 60px;
+    margin-left: -25px;
     column-gap: 20px;
   }
   section.operation__contain h2.operation__title {
@@ -871,38 +885,39 @@ div.menu__content .d-3 {
   section.dining__contain {
     display: block;
     padding-right: 20px;
+    padding-left: 65px;
   }
   section.dining__contain div.dining__picture {
     width: 100%;
   }
   section.dining__contain div.dining__picture a.dining img {
-    width: 100%;
+    width: 95%;
   }
-  section.dining__contain div.dining__content {
-    width: 100%;
+  div.dining__content {
+    max-width: 100%;
   }
-  section.dining__contain div.heart__palettedugout {
+  div.heart__palettedugout {
     height: 50px;
     position: absolute;
-    right: 0px;
+    right: 40px;
     top: -160px;
   }
-  section.dining__contain div.heart__lanoteenchantee {
+  div.heart__lanoteenchantee {
     height: 50px;
     position: absolute;
-    right: 0px;
+    right: 40px;
     top: -160px;
   }
-  section.dining__contain div.heart__alafrancaise {
+  div.heart__alafrancaise {
     height: 50px;
     position: absolute;
-    right: 0px;
+    right: 40px;
     top: -160px;
   }
-  section.dining__contain div.heart__ledelicedessens {
+  div.heart__ledelicedessens {
     height: 50px;
     position: absolute;
-    right: 0px;
+    right: 40px;
     top: -160px;
   }
   footer {
