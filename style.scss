@@ -567,7 +567,7 @@ body{
       &:hover{visibility: hidden}
     }
   }
-  button.btn {
+  button.btnc {
     border: 1px solid #ff79da;
     background-color: #ff79da;
     color: white;
@@ -692,79 +692,98 @@ body{
     }
     section.dining__contain{  padding-left: 20px;
     }
+    button.btn{
+      margin-left:-20px;
+    }
+    /*---*/
+
+    img.picture{
+      height:256px;
+    }
+    button.btnc{
+      margin-left:212px;
+    }
   }
   @media only screen and (min-width:1280px){
-  form{
-    margin-left: 2px;
-    display:flex;
-    width:100%;
-    height: 65px;
-    input.index{font-size: 20px;
+    form{
+      margin-left: 2px;
+      display:flex;
+      width:100%;
+      height: 65px;
+      input.index{font-size: 20px;
+      }
+      button.map i.fas{font-size: 20px;
+      }
     }
-    button.map i.fas{font-size: 20px;
-    }
-  }
-  section.operation__contain {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    padding:60px ;
-    margin-left: -25px;
-    column-gap: 20px;
-    h2.operation__title{
-      position: absolute;
-      top: 300px;
-      left: 0px;
-      padding-top:15px ;
-    }
-  }
-  section.dining__contain{
-    display: block;
-    padding-right: 20px;
-    padding-left: 65px;
-    div.dining__picture{width: 100%;
-      a.dining img{
-        width: 95%;
-      }
-    }  
-  }
-    div.dining__content{max-width: 100%;
-    }
-      div.heart__palettedugout{
-        height: 50px;
-        position: absolute;
-        right: 40px;
-        top:-160px;
-      }
-      div.heart__lanoteenchantee{
-        height: 50px;
-        position: absolute;
-        right: 40px;
-        top:-160px;
-      }
-      div.heart__alafrancaise{
-        height: 50px;
-        position: absolute;
-        right: 40px;
-        top:-160px;
-      }
-      div.heart__ledelicedessens{
-        height: 50px;
-        position: absolute;
-        right:40px;
-        top:-160px;
-
-      }
-  
-    footer{
+    section.operation__contain {
       display: flex;
-      justify-content: center;
-      .footpage{
-        width:100%;
-        padding-left:500px;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      padding:60px ;
+      margin-left: -25px;
+      column-gap: 20px;
+      h2.operation__title{
+        position: absolute;
+        top: 300px;
+        left: 0px;
+        padding-top:15px ;
       }
     }
-/*---la palette du goût*/
+    section.dining__contain{
+      display: block;
+      padding-right: 20px;
+      padding-left: 65px;
+      div.dining__picture{width: 100%;
+        a.dining img{
+          width: 95%;
+        }
+      }  
+    }
+
+      div.dining__content{max-width: 100%;
+      }
+        div.heart__palettedugout{
+          height: 50px;
+          position: absolute;
+          right: 40px;
+          top:-160px;
+        }
+        div.heart__lanoteenchantee{
+          height: 50px;
+          position: absolute;
+          right: 40px;
+          top:-160px;
+        }
+        div.heart__alafrancaise{
+          height: 50px;
+          position: absolute;
+          right: 40px;
+          top:-160px;
+        }
+        div.heart__ledelicedessens{
+          height: 50px;
+          position: absolute;
+          right:40px;
+          top:-160px;
+
+        }
+    
+      footer{
+        display: flex;
+        justify-content: center;
+        .footpage{
+          width:100%;
+          padding-left:500px;
+        }
+      }
+  /*---*/
+      button.btnc{
+        margin-left:400px;
+      }
+      img.picture{object-fit:cover ;}
+
+
+
 
 
 
