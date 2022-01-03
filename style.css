@@ -1,3 +1,4 @@
+@charset "UTF-8";
 div.footpage {
   display: flex;
   flex-direction: column;
@@ -928,4 +929,5 @@ div.menu__content .d-3 {
     width: 100%;
     padding-left: 500px;
   }
+  /*---la palette du goût*/
 }

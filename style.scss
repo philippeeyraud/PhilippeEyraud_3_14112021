@@ -13,7 +13,6 @@
     opacity: 1;
   }
 }
-
 @keyframes rotate-icon {
   0% {
     -webkit-transform: rotate(-270deg);
@@ -41,9 +40,7 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
-  
 }
-
   .accueil{
     height: 100%;
     width: 100%;
@@ -54,7 +51,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
   .accueil.h1{
     font-size: 120px;
     margin-bottom: 450px;
@@ -73,7 +69,6 @@ body{
     animation: disappear 2s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    
   }
   @keyframes disappear{
     0%{transform:scale(1);
@@ -87,9 +82,7 @@ body{
     letter-spacing: 15px;
     margin-bottom: 150px;
     animation:flash 1.2s linear infinite;
-   
-
-   }
+    }
     @keyframes flash{
       0%{
         color:#fff900;
@@ -103,52 +96,37 @@ body{
           text-shadow: 0 0 7px #fff900;
           display: none;
       } 
-     
     }
     .lettre:nth-child(1){
       animation-delay: 0.1s;
-      ;
     }
     .lettre:nth-child(2){
       animation-delay: 0.2s;
-      ;
     }
     .lettre:nth-child(3){
       animation-delay: 0.3s;
-      ;
     }
     .lettre:nth-child(4){
       animation-delay: 0.4s;
-      ;
     }
     .lettre:nth-child(5){
       animation-delay: 0.5s;
-      ;
     }
     .lettre:nth-child(6){
       animation-delay: 0.6s;
-      ;
     }
     .lettre:nth-child(7){
       animation-delay: 0.7s;
-      ;
     }
     .lettre:nth-child(8){
       animation-delay: 0.8s;
-      ;
     }
-
     .lettre:nth-child(9){
       animation-delay: 0.9s;
-      ;
     }
-
     .lettre:nth-child(10){
       animation-delay: 1s;
-      ;
     }
-
-
   header {
     display: flex;
     flex-direction: column;
@@ -170,7 +148,6 @@ body{
     height: 40px;
     column-gap: 0px;
     align-items: center;
-
     button.map {
       width: 40px;
       height: 40px;
@@ -351,7 +328,6 @@ body{
       margin-left: 10px;
       padding: 10px 0px 0px 10px;
       font-size: 20px;
-      
       a.content {
         text-decoration: none;
         div.dining__title {
@@ -378,8 +354,6 @@ body{
               -webkit-background-clip: text;
               opacity:0;
               transition: all;
-         
-             
               &:hover.fas{ opacity:1;
                 transform: scale(1) translateY(-50%);
                 transition-duration: 1s;
@@ -393,10 +367,7 @@ body{
               right: 40px;
               &:hover{visibility: hidden}
               }
-        
-            
           }
-          
           div.heart__lanoteenchantee{
             i{transform: translateY(-50%);} 
             .fas {
@@ -538,8 +509,6 @@ body{
   section.card-menu {
     padding: 10px 10px 60px 10px;
     background-color: rgb(246, 246, 246);
-   
-    
     h3.card-menu__title {
       padding-bottom: 5px;
       width: 10%;
@@ -548,7 +517,6 @@ body{
       border-bottom: 1px solid lightgrey;
       border-width: 3px;
       text-decoration: none;
-      
     }
   }
   div.menu {
@@ -557,8 +525,6 @@ body{
     margin-top: -15px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    
-    
     h1.card__title {
       margin: 20px 15px 5px 0px;
       font-family: 'Shrikhand', cursive;
@@ -572,7 +538,6 @@ body{
     right: 45px;
     top: 365px;
     font-size: 25px;
-  
     i{
       transform: translateY(-50%);
     } 
@@ -590,7 +555,6 @@ body{
          opacity:1;
         transform: scale(1) translateY(-50%) ;
       transition-duration: 1.5s;}
-     
     }
     .far{
       position: absolute;
@@ -601,7 +565,7 @@ body{
       background-clip: text;
       transition: all;
       &:hover{visibility: hidden}
-  }
+    }
   }
   button.btn {
     border: 1px solid #ff79da;
@@ -682,8 +646,6 @@ body{
       overflow: hidden;
       position: relative;
       top:10px;
-           
-      
       }
       div.check__icon--check {
         display: flex;
@@ -702,11 +664,8 @@ body{
         margin-right: 0px;
         animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         transition: all 0.8s;
-      
-        
-        i { 
+      i { 
           animation: rotate-icon 0.6s ease-in-out both;
-        
           }
           .fa-check-circle {
           color: #99e2d0;
@@ -717,10 +676,10 @@ body{
         }
       }
     }
-      @for $d0 from 0 to 4 {
-        .d-#{$d0}{
-          animation-delay:($d0 * 0.3s);}
-        }          
+  @for $d0 from 0 to 4 {
+    .d-#{$d0}{
+      animation-delay:($d0 * 0.3s);}
+    }          
   }     
   @media only screen and (min-width:768px){
     form{
@@ -734,19 +693,16 @@ body{
     section.dining__contain{  padding-left: 20px;
     }
   }
-  
   @media only screen and (min-width:1280px){
   form{
     margin-left: 2px;
     display:flex;
     width:100%;
     height: 65px;
-  
     input.index{font-size: 20px;
     }
     button.map i.fas{font-size: 20px;
     }
-  
   }
   section.operation__contain {
     display: flex;
@@ -773,7 +729,6 @@ body{
     }  
   }
     div.dining__content{max-width: 100%;
-    
     }
       div.heart__palettedugout{
         height: 50px;
@@ -807,11 +762,9 @@ body{
       .footpage{
         width:100%;
         padding-left:500px;
-    
       }
-
     }
-
+/*---la palette du goût*/
 
 
 
