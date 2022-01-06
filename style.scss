@@ -1,8 +1,8 @@
-@import './utils/variables';
-@import './utils/%placeholders';
-@import './layout/form';
+@import "utils/variables.scss";
+@import "utils/placeholders.scss";
+@import "utils/mixins.scss";
 
-@mixin margin{margin-right: -40px;}
+
 
 @keyframes itemdisplay {
   0%{
@@ -55,7 +55,7 @@ body{
     font-size: 120px;
     margin-bottom: 450px;
   }
-/*-----*/
+
   .loader{
     position: fixed;
     background:#f8f8f8;
@@ -83,20 +83,22 @@ body{
     margin-bottom: 150px;
     animation:flash 1.2s linear infinite;
     }
-    @keyframes flash{
-      0%{
+  @keyframes flash{
+    0%{
+      color:#fff900;
+      text-shadow: 0 0 7px #fff900;
+    }
+    90%{
+      color:#484848;
+      text-shadow: none;}
+    100%{
         color:#fff900;
         text-shadow: 0 0 7px #fff900;
-      }
-      90%{
-        color:#484848;
-        text-shadow: none;}
-      100%{
-          color:#fff900;
-          text-shadow: 0 0 7px #fff900;
-          display: none;
-      } 
-    }
+        display: none;
+    } 
+  }
+
+  
     .lettre:nth-child(1){
       animation-delay: 0.1s;
     }
@@ -189,7 +191,7 @@ body{
         font-size: 12px;
         width: 180px;
         border-color: transparent;
-        background: linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+        @include gradient;
         box-shadow: 1px 1px 1px 1px rgb(241, 150, 228);
         cursor: pointer;
         position: relative;
@@ -263,21 +265,10 @@ body{
       }
     }
     .btn__grey {
-      background-color: rgb(246, 246, 246);
-      box-shadow: 2px 2px 2px 2px #dff7f1;
-      cursor: pointer;
-      font-weight: bold;
-      &:hover {
-        background-color: lighten($grey, 45);
-      }
+     @include btn;
     }
     .btn__lightgrey {
-      background-color: rgb(246, 246, 246);
-      box-shadow: 2px 2px 2px 2px #e5fdf7;
-      cursor: pointer;
-      font-weight: bold;
-      &:hover {
-        background-color: lighten($grey, 45);
+     @include btn;
       }
     }
     .btn__purple {
@@ -288,7 +279,7 @@ body{
       &:hover {
         background-color: rgb(248, 243, 253);
       }
-    }
+    
   }
   section.dining__contain {
     background-color: #f8f8f8;
@@ -344,116 +335,57 @@ body{
           div.heart__palettedugout{
             i{transform: translateY(-50%);} 
             .fas {
-              position: absolute;
-              font-size: 25px;
-              top: 980px;
-              right: 40px;
-              color: transparent;
-              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
-              background-clip: text;
-              -webkit-background-clip: text;
-              opacity:0;
-              transition: all;
-              &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);
-                transition-duration: 1s;
-                }
+              @include top;
+              @include heartfas;
             }
             .far{
-              color: black;
-              position: absolute;
-              font-size:25px;
-              top: 980px;
-              right: 40px;
+              @include top;
+              @include sizecolorheart;
               &:hover{visibility: hidden}
-              }
+            }
           }
           div.heart__lanoteenchantee{
             i{transform: translateY(-50%);} 
             .fas {
-              position: absolute;
-              font-size: 25px;
-              top:1240px;
-              right: 40px;
-              color: transparent;
-              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
-              background-clip: text;
-              -webkit-background-clip: text;
-              opacity:0;
-              transition: all;
-
-              &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);
-                transition-duration: 1s;}
+              @include top($top:1240px);
+              @include heartfas;
             }
             .far{
-              color: black;
-              position: absolute;
-              font-size: 25px;
-              top: 1240px;
-              right: 40px;
+              @include top($top:1240px);
+              @include sizecolorheart;
               &:hover{visibility: hidden}
             }
           }
           div.heart__alafrancaise{
             i{transform: translateY(-50%);} 
             .fas {
-              position: absolute;
-              font-size:25px;
-              top: 1498px;
-              right: 40px;
-              color: transparent;
-              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
-              background-clip: text;
-              -webkit-background-clip: text;
-              opacity:0;
-              transition: all;
-              transition-duration: 1.5s;
-              &:hover.fas{ opacity:1;
-                transform: scale(1) translateY(-50%);
-                transition-duration: 1s;}
+              @include top($top:1498px);
+              @include heartfas;
             }
             .far{
-              color: black;
-              position: absolute;
-              font-size: 25px;
-              top: 1498px;
-              right: 40px;
+              @include top($top:1498px);
+              @include sizecolorheart;
             &:hover{visibility: hidden;
-             }
-           }
-        }   
+            }
+          }
+        }
           div.heart__ledelicedessens{
             i{transform: translateY(-50%);} 
             .fas {
-              position: absolute;
-              font-size:25px;
-              top: 1759px;
-              right: 40px;
-              color: transparent;
-              background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
-              background-clip: text;
-              -webkit-background-clip: text;
-              opacity:0;
-              transition: all;
-              &:hover.fas{ opacity:1;
-                transform: scale(1.1) translateY(-50%);
-                transition-duration: 1s;}
+              @include top($top:1759px);
+              @include heartfas;
             }
             .far{
-              color: black;
-              position: absolute;
-              font-size: 25px;
-              top: 1759px;
-              right: 40px;
+              @include top($top:1759px);
+              @include sizecolorheart;
             &:hover{visibility: hidden}
               }
         
             }
           }   
-      
-      }  
-    }
+      }   
+    }  
+    
   div.footpage {
     @extend %footpage;
     a img.footerlogo {
@@ -543,10 +475,10 @@ body{
     } 
     .fas {
       position: absolute;
-      font-size: 25px;
       top: 15px;
+      font-size: 25px;
       color: transparent;
-      background-image:linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+      @include gradient;
       background-clip: text;
       -webkit-background-clip: text;
       opacity:0;
@@ -578,7 +510,7 @@ body{
     top: 20px;
     left: 90px;
     font-size: 16px;
-    background: linear-gradient(rgb(242, 123, 224), rgb(179, 116, 224));
+    @include gradient;
     box-shadow: 4px 2px 4px 2px rgb(241, 150, 228);
     cursor: pointer;
     &:hover {
@@ -587,9 +519,7 @@ body{
     }
   }
   div.menu__content {
-    white-space: nowrap; 
-    text-overflow: ellipsis;
-    overflow: hidden;
+    @include animation;
     .item{
       display: flex;
       flex-direction:row;
@@ -604,9 +534,7 @@ body{
       padding-bottom: 0px;
       padding-left:3px;
       height:60px;
-      white-space: nowrap; 
-      text-overflow: ellipsis;
-      overflow: hidden;
+      @include animation;
       cursor: pointer;
       animation-timing-function: cubic-bezier(.08,.82,.83,.67);
       animation-duration:0.6s ;
@@ -620,22 +548,15 @@ body{
       animation-fill-mode: both;
       transform: scale(0);
       div.describe{ 
-        white-space: nowrap; 
-        text-overflow: ellipsis;
-        overflow: hidden;
+        @include animation;
         p.describe-text{
         font-weight: 300; 
-        white-space: nowrap;
         margin: 0px;
         display: block;
-        white-space: nowrap; 
-        text-overflow: ellipsis;
-        overflow: hidden;
+        @include animation;
         }
         h4 {
-        white-space: nowrap; 
-        text-overflow: ellipsis;
-        overflow: hidden;
+       @include animation;
         }
 
       }
@@ -671,7 +592,7 @@ body{
           color: #99e2d0;
           background-color: white;
           border-radius: 50px;
-          font-size: 29px;
+          font-size: 26px;
           animation: rotate-icon 0.6s ease-in-out both;
         }
       }
@@ -743,28 +664,16 @@ body{
       div.dining__content{max-width: 100%;
       }
         div.heart__palettedugout{
-          height: 50px;
-          position: absolute;
-          right: 40px;
-          top:-160px;
+          @include heartresponsive;
         }
         div.heart__lanoteenchantee{
-          height: 50px;
-          position: absolute;
-          right: 40px;
-          top:-160px;
+          @include heartresponsive;
         }
         div.heart__alafrancaise{
-          height: 50px;
-          position: absolute;
-          right: 40px;
-          top:-160px;
+          @include heartresponsive;
         }
         div.heart__ledelicedessens{
-          height: 50px;
-          position: absolute;
-          right:40px;
-          top:-160px;
+          @include heartresponsive;
 
         }
     
@@ -787,7 +696,7 @@ body{
 
 
 
-  } 
+ }
 
  
 

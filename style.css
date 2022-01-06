@@ -14,37 +14,6 @@ div.footpage a img.footerlogo {
   -webkit-filter: white(100%);
 }
 
-_form.scss
-_form {
-  display: flex;
-  background-color: #eaeaeb;
-  width: 375px;
-  justify-content: center;
-  box-shadow: 3px 1px 3px 1px #d9d9d9;
-  border: 1px solid #e6e6e6;
-  height: 40px;
-  column-gap: 0px;
-  align-items: center;
-}
-
-_form.scss
-_form button.map {
-  width: 40px;
-  height: 40px;
-  background-color: #eaeaeb;
-  border: none;
-  align-items: center;
-}
-
-_form.scss
-_form input.index {
-  border: none;
-  background-color: #eaeaeb;
-  height: 20px;
-  font-size: 15px;
-  width: 140px;
-}
-
 @keyframes itemdisplay {
   0% {
     transform: translatey(50%);
@@ -102,7 +71,6 @@ body {
   margin-bottom: 450px;
 }
 
-/*-----*/
 .loader {
   position: fixed;
   background: #f8f8f8;
@@ -356,7 +324,7 @@ section.operation__contain .btn__grey:hover {
 
 section.operation__contain .btn__lightgrey {
   background-color: #f6f6f6;
-  box-shadow: 2px 2px 2px 2px #e5fdf7;
+  box-shadow: 2px 2px 2px 2px #dff7f1;
   cursor: pointer;
   font-weight: bold;
 }
@@ -365,14 +333,14 @@ section.operation__contain .btn__lightgrey:hover {
   background-color: #f3f3f3;
 }
 
-section.operation__contain .btn__purple {
+.btn__purple {
   background-color: #f3edff;
   box-shadow: 2px 2px 2px 2px #efeaf5;
   cursor: pointer;
   font-weight: bold;
 }
 
-section.operation__contain .btn__purple:hover {
+.btn__purple:hover {
   background-color: #f8f3fd;
 }
 
@@ -441,11 +409,11 @@ section.dining__contain div.dining__content a.content div.heart__palettedugout i
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .fas {
   position: absolute;
-  font-size: 25px;
   top: 980px;
   right: 40px;
+  font-size: 25px;
   color: transparent;
-  background-image: linear-gradient(#f27be0, #b374e0);
+  background: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -459,11 +427,11 @@ section.dining__contain div.dining__content a.content div.heart__palettedugout .
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .far {
-  color: black;
   position: absolute;
-  font-size: 25px;
   top: 980px;
   right: 40px;
+  font-size: 25px;
+  color: black;
 }
 
 section.dining__contain div.dining__content a.content div.heart__palettedugout .far:hover {
@@ -476,11 +444,11 @@ section.dining__contain div.dining__content a.content div.heart__lanoteenchantee
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .fas {
   position: absolute;
-  font-size: 25px;
   top: 1240px;
   right: 40px;
+  font-size: 25px;
   color: transparent;
-  background-image: linear-gradient(#f27be0, #b374e0);
+  background: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -494,11 +462,11 @@ section.dining__contain div.dining__content a.content div.heart__lanoteenchantee
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .far {
-  color: black;
   position: absolute;
-  font-size: 25px;
   top: 1240px;
   right: 40px;
+  font-size: 25px;
+  color: black;
 }
 
 section.dining__contain div.dining__content a.content div.heart__lanoteenchantee .far:hover {
@@ -511,16 +479,15 @@ section.dining__contain div.dining__content a.content div.heart__alafrancaise i 
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .fas {
   position: absolute;
-  font-size: 25px;
   top: 1498px;
   right: 40px;
+  font-size: 25px;
   color: transparent;
-  background-image: linear-gradient(#f27be0, #b374e0);
+  background: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
   transition: all;
-  transition-duration: 1.5s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .fas:hover.fas {
@@ -530,11 +497,11 @@ section.dining__contain div.dining__content a.content div.heart__alafrancaise .f
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .far {
-  color: black;
   position: absolute;
-  font-size: 25px;
   top: 1498px;
   right: 40px;
+  font-size: 25px;
+  color: black;
 }
 
 section.dining__contain div.dining__content a.content div.heart__alafrancaise .far:hover {
@@ -547,11 +514,11 @@ section.dining__contain div.dining__content a.content div.heart__ledelicedessens
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .fas {
   position: absolute;
-  font-size: 25px;
   top: 1759px;
   right: 40px;
+  font-size: 25px;
   color: transparent;
-  background-image: linear-gradient(#f27be0, #b374e0);
+  background: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -560,16 +527,16 @@ section.dining__contain div.dining__content a.content div.heart__ledelicedessens
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .fas:hover.fas {
   opacity: 1;
-  transform: scale(1.1) translateY(-50%);
+  transform: scale(1) translateY(-50%);
   transition-duration: 1s;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .far {
-  color: black;
   position: absolute;
-  font-size: 25px;
   top: 1759px;
   right: 40px;
+  font-size: 25px;
+  color: black;
 }
 
 section.dining__contain div.dining__content a.content div.heart__ledelicedessens .far:hover {
@@ -674,10 +641,10 @@ div.card__heart i {
 
 div.card__heart .fas {
   position: absolute;
-  font-size: 25px;
   top: 15px;
+  font-size: 25px;
   color: transparent;
-  background-image: linear-gradient(#f27be0, #b374e0);
+  background: linear-gradient(#f27be0, #b374e0);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -770,7 +737,6 @@ div.menu__content .item div.describe {
 
 div.menu__content .item div.describe p.describe-text {
   font-weight: 300;
-  white-space: nowrap;
   margin: 0px;
   display: block;
   white-space: nowrap;
@@ -821,7 +787,7 @@ div.menu__content .item:hover .check__icon--check .fa-check-circle {
   color: #99e2d0;
   background-color: white;
   border-radius: 50px;
-  font-size: 29px;
+  font-size: 26px;
   animation: rotate-icon 0.6s ease-in-out both;
 }
 
