@@ -1,0 +1,30 @@
+@keyframes itemdisplay {
+  0% {
+    transform: translatey(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slide-lefticon {
+  0% {
+    transform: translateX(3rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
