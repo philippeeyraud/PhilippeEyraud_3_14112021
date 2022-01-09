@@ -45,6 +45,31 @@ div.footpage a img.footerlogo {
   }
 }
 
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900;
+    display: none;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -86,37 +111,12 @@ body {
   animation-fill-mode: forwards;
 }
 
-@keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
 .lettre {
   color: #484848;
   font-size: 30px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;
-}
-
-@keyframes flash {
-  0% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900;
-  }
-  90% {
-    color: #484848;
-    text-shadow: none;
-  }
-  100% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900;
-    display: none;
-  }
 }
 
 .lettre:nth-child(1) {
@@ -194,7 +194,7 @@ form button.map {
 form input.index {
   border: none;
   background-color: #eaeaeb;
-  height: 20px;
+  height: 25px;
   font-size: 15px;
   width: 140px;
 }
@@ -358,6 +358,40 @@ section.dining__contain h2.dining__title {
   padding-left: 10px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+}
+
+section.dining__contain div.newone {
+  display: flex;
+  position: absolute;
+  left: 268px;
+  width: 90px;
+  height: 28px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #99e2d0;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  top: 800px;
+  color: #5fbfa8;
+}
+
+section.dining__contain div.newtwo {
+  display: flex;
+  position: absolute;
+  left: 268px;
+  width: 90px;
+  height: 28px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #99e2d0;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  top: 1060px;
+  color: #5fbfa8;
 }
 
 section.dining__contain div.dining__picture a.dining img {
@@ -607,7 +641,7 @@ section.card-menu h3.card-menu__title {
   width: 10%;
   color: black;
   margin: 30px 0px 15px 0px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #99E2D0;
   border-width: 3px;
   text-decoration: none;
 }
@@ -631,7 +665,7 @@ div.menu h1.card__title {
 div.card__heart {
   position: absolute;
   right: 45px;
-  top: 365px;
+  top: 371px;
   font-size: 25px;
 }
 
@@ -784,9 +818,7 @@ div.menu__content .item:hover .check__icon--check i {
 }
 
 div.menu__content .item:hover .check__icon--check .fa-check-circle {
-  color: #99e2d0;
-  background-color: white;
-  border-radius: 50px;
+  color: white;
   font-size: 26px;
   animation: rotate-icon 0.6s ease-in-out both;
 }

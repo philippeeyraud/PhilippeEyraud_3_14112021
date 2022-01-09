@@ -1,3 +1,4 @@
+
 @import "utils/variables.scss";
 @import "utils/placeholders.scss";
 @import "utils/mixins.scss";
@@ -43,12 +44,7 @@ body{
     animation-delay: 3s;
     animation-fill-mode: forwards;
   }
-  @keyframes disappear{
-    0%{transform:scale(1);
-    }
-    100%{transform: scale(0);
-    }
-  }
+ 
   .lettre{
     color: #484848;
     font-size: 30px;
@@ -56,22 +52,6 @@ body{
     margin-bottom: 150px;
     animation:flash 1.2s linear infinite;
     }
-  @keyframes flash{
-    0%{
-      color:#fff900;
-      text-shadow: 0 0 7px #fff900;
-    }
-    90%{
-      color:#484848;
-      text-shadow: none;}
-    100%{
-        color:#fff900;
-        text-shadow: 0 0 7px #fff900;
-        display: none;
-    } 
-  }
-
-  
     .lettre:nth-child(1){
       animation-delay: 0.1s;
     }
@@ -133,7 +113,7 @@ body{
     input.index {
       border: none;
       background-color: rgb(234, 234, 235);
-      height: 20px;
+      height: 25px;
       font-size: 15px;
       width: 140px;
     }
@@ -261,12 +241,24 @@ body{
     padding-right: 5px;
     padding-left: 5px;
     box-sizing: border-box;
+    
     h2.dining__title {
       margin-bottom: 20px;
       padding-left: 10px;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
     }
+    div.newone {    
+      @include new;
+      top: 800px;
+      color: #5fbfa8;
+     
+    } 
+    div.newtwo {    
+      @include new;
+      top: 1060px;
+      color: #5fbfa8;
+    } 
     div.dining__picture a.dining img {
       width: 95%;
       height: 170px;
@@ -419,7 +411,7 @@ body{
       width: 10%;
       color: black;
       margin: 30px 0px 15px 0px;
-      border-bottom: 1px solid lightgrey;
+      border-bottom: 1px solid $green;
       border-width: 3px;
       text-decoration: none;
     }
@@ -441,7 +433,7 @@ body{
   div.card__heart {
     position: absolute;
     right: 45px;
-    top: 365px;
+    top: 371px;
     font-size: 25px;
     i{
       transform: translateY(-50%);
@@ -562,9 +554,7 @@ body{
           animation: rotate-icon 0.6s ease-in-out both;
           }
           .fa-check-circle {
-          color: #99e2d0;
-          background-color: white;
-          border-radius: 50px;
+          color: white;
           font-size: 26px;
           animation: rotate-icon 0.6s ease-in-out both;
         }
@@ -670,25 +660,3 @@ body{
 
 
  }
-
- 
-
-  
-  
-  
-
-
-
-
-
-    
- 
-    
-  
-  
-    
-   
- 
-   
-
-  

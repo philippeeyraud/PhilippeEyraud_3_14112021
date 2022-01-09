@@ -29,3 +29,23 @@
               transform: translateX(0rem);
     }
   }
+  @keyframes disappear{
+    0%{transform:scale(1);
+    }
+    100%{transform: scale(0);
+    }
+  }
+ @keyframes flash{
+    0%{
+      color:#fff900;
+      text-shadow: 0 0 7px #fff900;
+    }
+    90%{
+      color:#484848;
+      text-shadow: none;}
+    100%{
+        color:#fff900;
+        text-shadow: 0 0 7px #fff900;
+        display: none;
+    } 
+  }
